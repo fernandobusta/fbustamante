@@ -1,0 +1,34 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import image from './image.png'
+import logo from '@/images/logos/firewall-logo.png'
+
+export const project = {
+  number: 4,
+  author: 'Fernando Bustamante',
+  date: '2024-Present',
+  name: '5G SMS Firewall',
+  title: '4th Year Project @ DCU',
+  logo: logo,
+  description: 'AI-Driven Firewall for 5G SMS Security.',
+}
+
+export const metadata = {
+  name: project.name,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+The 5G SMS Firewall project aims to enhance the security and eﬃciency of SMS communications
+within 5G networks. By creating an innovative and unprecedented decentralised and modular
+firewall, this system addresses the growing need for robust and scalable solutions to mitigating
+threats such as spam, phishing and unauthorised access in SMS traﬃc. The system leverages 5G
+network simulation technologies including OMNeT++, INET and Simu5G to simulate a realistic 5G
+network to develop and test firewall functionalities in a controlled environment.
+
+The Firewall integrates cloud-based processing, machine learning for phishing detection and an
+intuitive administrative dashboard. It ensure seamless SMS routing, filtering and delivery, while
+safeguarding against malicious activities. This system operates in harmony with the simulated 5G
+components, enabling comprehensive testing before deployment in live networks.
+
+<Image src={image} alt="" />

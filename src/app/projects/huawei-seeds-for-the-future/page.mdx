@@ -1,0 +1,30 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import logo from '@/images/logos/huawei-logo.png'
+
+export const project = {
+  number: 2,
+  author: 'Fernando Bustamante',
+  date: '2022',
+  name: 'Huawei',
+  title: 'Seeds For The Future Program',
+  logo: logo,
+  description:
+    'Selected as one of 100 students from universities across Ireland to participate in the Huawei Seeds for the Future program, aimed at fostering innovation for a sustainable future.',
+}
+
+export const metadata = {
+  name: project.name,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+### Huawei Seeds for the Future Program
+
+Selected as one of 100 students from universities across Ireland to participate in the Huawei Seeds for the Future program, aimed at fostering innovation for a sustainable future.
+
+- Collaborated in a team of 8 to develop a project focused on sustainability, utilizing advanced technologies such as AI, 5G, IoT, and cloud computing.
+- Gained valuable insights into the intersection of technology and environmental sustainability.
+- Contributed to a project that aims to make a positive impact on the community.
+
+Explore our project here: https://toss-it-shamrocksolutions.netlify.app/

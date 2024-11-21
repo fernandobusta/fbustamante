@@ -1,0 +1,58 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import image from './image.png'
+import logo from '@/images/logos/bynle-logo.png'
+
+export const project = {
+  number: 3,
+  author: 'Fernando Bustamante',
+  date: '2023',
+  name: 'Bynle',
+  title: '3rd Year Project @ DCU',
+  logo: logo,
+  description:
+    'Web-based social network for university clubs to manage events.',
+  repos: [
+    {
+      name: 'Backend',
+      lang: 'Django',
+      url: 'https://github.com/fernandobusta/bynle-django-backend',
+    },
+    {
+      name: 'Frontend',
+      lang: 'React',
+      url: 'https://github.com/fernandobusta/bynle-react-frontend',
+    },
+    {
+      name: 'Technical Manual',
+      lang: 'Markdown',
+      url: 'https://github.com/fernandobusta/bynle-docs/blob/main/technical_manual.md',
+    },
+    {
+      name: 'User Manual',
+      lang: 'Markdown',
+      url: 'https://github.com/fernandobusta/bynle-docs/blob/main/user_manual.md',
+    },
+  ],
+}
+
+export const metadata = {
+  name: project.name,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+Bynle is a web-based social network designed for university clubs and societies to create, manage, and promote events.
+
+<Image src={image} alt="" />
+
+## Overview of the System
+
+- **Technologies:** Developed using **Django** for the backend and **React** for the frontend, ensuring a responsive and dynamic user experience.
+- **Features:**
+  - **Ticketing System:** Securely handles ticket purchases and transfers through **Stripe**, including web-hooks for real-time payment processing.
+  - **Event Management:** Enables clubs to create and manage events, with options for both free and paid events.
+  - **User Interaction:** Allows users to connect with friends, follow clubs, and share event experiences.
+  - **QR Code Integration:** Implements QR code generation and scanning for ticket validation at events, enhancing security and efficiency.
+  - **Analytics Dashboard:** Provides clubs with insights into user engagement and ticket sales, helping them optimise event strategies.
+- **Architecture:** Uses a micro-services architecture for scalability and a **PostgreSQL** database for robust data management.

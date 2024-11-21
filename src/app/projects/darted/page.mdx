@@ -1,0 +1,40 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import image1 from './sistem-pitch.png'
+import image2 from './enactus-pitch.png'
+import logo from '@/images/logos/darted-logo.png'
+
+export const project = {
+  number: 1,
+  imageClass: 'bg-gradient-to-r from-blue-500 to-blue-400',
+  author: 'Fernando Bustamante',
+  date: '2022-2023',
+  name: 'Darted',
+  title: 'Optimal Business Location Prediction',
+  logo: logo,
+  description:
+    'Developed and presented project aimed at predicting optimal locations for physical businesses to enhance their chances of success.',
+}
+
+export const metadata = {
+  name: project.name,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+Bynle is a web-based social network designed for university clubs and societies to create, manage, and promote events.
+
+## Overview of the System
+
+- **Technologies:** Developed using **Django** for the backend and **React** for the frontend, ensuring a responsive and dynamic user experience.
+- **Features:**
+  - **Ticketing System:** Securely handles ticket purchases and transfers through **Stripe**, including web-hooks for real-time payment processing.
+  - **Event Management:** Enables clubs to create and manage events, with options for both free and paid events.
+  - **User Interaction:** Allows users to connect with friends, follow clubs, and share event experiences.
+  - **QR Code Integration:** Implements QR code generation and scanning for ticket validation at events, enhancing security and efficiency.
+  - **Analytics Dashboard:** Provides clubs with insights into user engagement and ticket sales, helping them optimise event strategies.
+- **Architecture:** Uses a micro-services architecture for scalability and a **PostgreSQL** database for robust data management.
+
+<Image src={image1} alt="" />
+
+<Image src={image2} alt="" />

@@ -1,0 +1,43 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import logo from '@/images/logos/dcu-boxing-logo.png'
+
+export const project = {
+  number: 2,
+  author: 'Fernando Bustamante',
+  date: '2023-Present',
+  name: 'DCU Boxing Club',
+  title: 'DCU Boxing Website & Sponsorship',
+  logo: logo,
+  description:
+    'Led sponsorship initiatives and event management for the Athletic Boxing Club at Dublin City University.',
+  repos: [
+    {
+      name: 'Website',
+      lang: 'Next.js',
+      url: 'https://github.com/fernandobusta/dcu-boxing-web',
+    },
+  ],
+}
+
+export const metadata = {
+  name: project.name,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+## Business Location Optimisation
+
+- **Overview:** Developed a project during my first and second years of college, aimed at predicting optimal locations for physical businesses to enhance their chances of success.
+- **Problem Statement:**
+  - With bankruptcy declarations in the EU at an all-time high since 2015 and 99% of businesses categorised as small or medium-sized enterprises, only 50% of small businesses survive beyond five years.
+- **Research Insights:**
+  - Location significantly impacts operational efficiency, brand perception, and customer access. Selecting the right site can reduce job loss, environmental impact, and the risk of bankruptcy.
+- **Goal:**
+  - To assist small businesses in gaining a competitive edge in an increasingly challenging environment by identifying optimal locations for establishment or expansion. The project envisions a platform where businesses can access relevant data, compare reviews, and analyse pricing against competitors.
+- **Technical Implementation:**
+  - Utilised Google Maps API to process data, including reviews, accessibility, and general pricing metrics, to inform location decisions.
+- **Presentations:**
+  - Presented our concept at the SISTEM Conference, sponsored by industry leaders such as Mastercard, Stripe and SIG. https://sistemconf.com/
+  - Participated in the Enactus National Competition in Ireland, advocating for our idea and its potential economic benefits. https://enactusuki.org/
+  - https://www.linkedin.com/posts/fernandobustamantedelrio-bourman_enactusnationalcompetition-enactusireland-activity-7075213993291718656-oexc?utm_source=share&utm_medium=member_desktop
