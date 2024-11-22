@@ -6,7 +6,7 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import logoCellusys from '@/images/logos/cellusys-logo.jpg'
-import logoBoxing from '@/images/logos/dcu-boxing-logo.png'
+import logoBoxing from '@/images/logos/dcu-boxing-logo.jpeg'
 import logoFuture from '@/images/logos/future-logo.jpeg'
 import logoOxfam from '@/images/logos/oxfam-logo.png'
 import tutor from '@/images/logos/tutor.png'
@@ -169,7 +169,7 @@ function Resume() {
     },
     {
       company: 'DCU Boxing Club',
-      imageClass: 'object-cover h-16',
+      imageClass: 'rounded-full',
       title: 'Sponsorship & Events Officer',
       logo: logoBoxing,
       start: '2023',
