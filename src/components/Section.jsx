@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-export function Section({ title, children }) {
+export function Section({ title, children, ...props }) {
   let id = useId()
 
   return (
@@ -14,6 +14,11 @@ export function Section({ title, children }) {
           className="text-sm font-semibold text-zinc-800 dark:text-zinc-100"
         >
           {title}
+          {props.subtitle && (
+            <span className="mt-1 block text-xs font-normal text-zinc-400 dark:text-zinc-200">
+              {props.subtitle}
+            </span>
+          )}
         </h2>
         <div className="md:col-span-3">{children}</div>
       </div>

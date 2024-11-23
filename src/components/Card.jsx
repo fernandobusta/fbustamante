@@ -56,6 +56,14 @@ Card.Description = function CardDescription({ children }) {
   )
 }
 
+Card.List = function CardList({ children }) {
+  return (
+    <ul className="relative z-10 mt-2 grid list-disc grid-cols-1 gap-y-4 text-sm text-zinc-600 dark:text-zinc-400">
+      {children}
+    </ul>
+  )
+}
+
 Card.Cta = function CardCta({ children }) {
   return (
     <div

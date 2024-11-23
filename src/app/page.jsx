@@ -156,16 +156,16 @@ function Resume() {
       imageClass: 'rounded-full',
       title: 'Software Engineer Intern',
       logo: logoCellusys,
-      start: 'March 2024',
-      end: 'September 2024',
+      start: '2024',
+      end: '2024',
     },
     {
       company: 'Cellusys',
       imageClass: 'rounded-full',
       title: 'Software Engineer Intern',
       logo: logoCellusys,
-      start: 'May 2023',
-      end: 'August 2023',
+      start: '2023',
+      end: '2023',
     },
     {
       company: 'DCU Boxing Club',
@@ -180,8 +180,8 @@ function Resume() {
       title: 'Software Engineer Intern',
       imageClass: 'rounded-full',
       logo: logoFuture,
-      start: 'June 2022',
-      end: 'September 2022',
+      start: '2022',
+      end: '2022',
     },
     {
       company: 'Private Events',
@@ -192,7 +192,7 @@ function Resume() {
     },
     {
       company: 'Private Tutor',
-      title: 'Maths, Languages, Programming, and Design',
+      title: 'Maths, Languages and Others',
       logo: tutor,
       start: '2019',
       end: '2024',
@@ -208,10 +208,12 @@ function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
-      </h2>
+      <Link href="work">
+        <h2 className="flex text-sm font-semibold text-zinc-900 hover:text-teal-500 dark:text-zinc-100 dark:hover:text-teal-400">
+          <BriefcaseIcon className="h-6 w-6 flex-none" />
+          <span className="ml-3">Work</span>
+        </h2>
+      </Link>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
