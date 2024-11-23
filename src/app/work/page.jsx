@@ -2,7 +2,7 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Subheading } from '@/components/heading'
-import { Link } from '@/components/Link'
+import Link from 'next/link'
 
 function ToolsSection({ children, ...props }) {
   return (
