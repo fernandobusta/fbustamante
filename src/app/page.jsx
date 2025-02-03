@@ -240,9 +240,10 @@ export default async function Home() {
             Fernando, BSc in Computer Science
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Cool dude. Computer Science student and future Master's. I do a bit
-            of coding and training, sometimes at the same time (not
-            recommended).
+            I'm a final year Computer Science student at Dublin City University
+            (DCU). Most of my work experience has revolved around developing
+            software for the telecom industry. You can check out some of my
+            projects here!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
