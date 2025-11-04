@@ -154,18 +154,18 @@ function Resume() {
     {
       company: 'Cellusys',
       imageClass: 'rounded-full',
-      title: 'Software Engineer Intern',
+      title: 'Integration Engineer',
       logo: logoCellusys,
-      start: '2024',
-      end: '2024',
+      start: '2025',
+      end: 'Present',
     },
     {
       company: 'Cellusys',
       imageClass: 'rounded-full',
-      title: 'Software Engineer Intern',
+      title: 'Software Engineer',
       logo: logoCellusys,
       start: '2023',
-      end: '2023',
+      end: '2024',
     },
     {
       company: 'DCU Boxing Club',
@@ -173,7 +173,7 @@ function Resume() {
       title: 'Sponsorship & Events Officer',
       logo: logoBoxing,
       start: '2023',
-      end: 'Present',
+      end: '2024',
     },
     {
       company: 'Future Connections',
