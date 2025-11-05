@@ -38,7 +38,23 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="Cellusys, Dublin">
-          <Tool title="Software Engineer Intern">
+          <Tool title="Integration Engineer">
+            <Subheading className="text-zinc-600 dark:text-zinc-400">
+              August 2025 - Present
+            </Subheading>
+            <li>
+              Leading onsite deployments and integrations for telecom software solutions 
+              (SS7, Diameter, GTP, and 5G systems), ensuring seamless interoperability 
+              across client networks.
+            </li>
+            <li>
+              Acting as a key technical liaison between operators and internal engineering teams, 
+              translating complex requirements into clear, actionable deliverables.
+            </li>
+          </Tool>
+        </ToolsSection>
+        <ToolsSection title="Cellusys, Dublin">
+          <Tool title="Software Engineer">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
               March 2024 - September 2024 and May 2023 - August 2023
             </Subheading>
