@@ -52,29 +52,41 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I´m Fernando, a computer science student living in Dublin.
+            I´m Fernando, an Integrations Engineer at Cellusys
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I am a highly driven final-year Computer Science student with a
-              consistent record of academic excellence and hands-on experience
-              in software development. My focus has been on building innovative
-              solutions in the telecom industry, where I have gained a strong
-              foundation in software engineering, Full Stack Development, and
-              telecom protocols. I am passionate about advancing my expertise in
-              Computing Systems, Cloud Computing, Networks and Mathematics,
-              aiming to contribute to cutting-edge research and impactful
-              projects.
+              I am an Integration Engineer at <strong>Cellusys</strong>, where
+              we design, deploy, and integrate advanced telecom software
+              solutions that keep mobile networks secure, efficient, and
+              intelligent. Our systems protect critical signalling traffic and
+              help operators gain visibility, control, and monetisation
+              opportunities across their networks.
             </p>
             <p>
-              Through internships and projects, I have honed my skills in agile
-              methodologies and collaborative problem-solving. My ambition is to
-              pursue a Master’s degree at a leading institution, where I can
-              deepen my understanding of emerging technologies such as
-              Artificial Intelligence, Cybersecurity and others. I am eager to
-              engage with a diverse, intellectually stimulating community and am
-              open to relocation for an opportunity to shape the future of
-              technology in a dynamic, highly-driven environment.
+              I have a strong background in
+              <strong>
+                software engineering, networking, and telecom protocols
+              </strong>
+              , with hands-on expertise across SS7, Diameter, GTP, and 5G
+              technologies. I’m deeply passionate about
+              <strong>
+                5G innovation, signalling intelligence, and cybersecurity in
+                telecom
+              </strong>
+              — helping build solutions that strengthen network resilience while
+              enabling operators to deliver safer and smarter connectivity.
+              Alongside the technical, I also focus on the{' '}
+              <strong>human side of engineering</strong>: improving how we
+              communicate with customers, foster trust, and deliver exceptional
+              service.
+            </p>
+            <p>
+              I’m driven by complex systems, meaningful collaboration, and the
+              challenge of turning technical depth into business impact. My goal
+              is to continue growing as an engineer and communicator,
+              contributing to a more secure, intelligent, and connected telecom
+              ecosystem.
             </p>
           </div>
         </div>
