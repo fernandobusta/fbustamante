@@ -30,7 +30,7 @@ export const metadata = {
   description: 'Professional Experience & Collaborations',
 }
 
-export default function Uses() {
+export default function Work() {
   return (
     <SimpleLayout
       title="Professional Experience & Collaborations"
@@ -102,7 +102,7 @@ export default function Uses() {
         <ToolsSection title="Athletic Boxing Club" subtitle="DCU, Dublin">
           <Tool title="Sponsorship & Events Officer">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2023 - Present
+              2023 - 2024
             </Subheading>
             Led sponsorship initiatives and managed over 100 members. Developed
             a new club website using Next.js driving over 60-member increase.
@@ -113,14 +113,14 @@ export default function Uses() {
         <ToolsSection title="Other Jobs">
           <Tool title="Private Tutor">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2019 - Present
+              2019 - 2025
             </Subheading>
             Maths, Languages, Programming, and Design
           </Tool>
 
           <Tool title="Waiter">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2018 - 2022
+              2018 - 2021
             </Subheading>
             Wedding Catering and Restaurants
           </Tool>

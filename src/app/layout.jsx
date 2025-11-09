@@ -6,10 +6,10 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Fernando',
-    default: 'Fernando Bustamante - Computer Science Student.',
+    default: 'Fernando Bustamante - Integration Engineer',
   },
   description:
-    "Cool dude. Computer Science student and future Master's. I do a bit of coding and training, sometimes at the same time (not recommended).",
+    'I’m an Integration Engineer at Cellusys, where we build telecom solutions that secure and optimise mobile networks worldwide.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

@@ -6,7 +6,8 @@ import { getAllProjects } from '@/lib/projects'
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description:
+    'A look at some of my favorite projects—the things I´ve built during my degree and in my own time.',
 }
 
 function Project({ project }) {
@@ -43,7 +44,7 @@ export default async function Projects() {
   return (
     <SimpleLayout
       title="Projects"
-      intro="These are some of the projects I have enjoyed most working on. Some of them during the 4 years of my Bachelor's degree in computer science, others during my free time."
+      intro="A look at some of my favorite projects—the things I've built during my degree and in my own time."
     >
       <ul
         role="list"
