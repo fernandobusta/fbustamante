@@ -97,6 +97,7 @@ export function ProjectLayout({ project, children }) {
                 >
                   {project.repos.map((repo) => (
                     <RepoTile
+                      key={repo.name}
                       title={repo.name}
                       url={repo.url}
                       lang={repo.lang}
