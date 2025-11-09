@@ -5,18 +5,21 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  experimental: {
-    outputFileTracingIncludes: {
-      '/projects/*': ['./src/app/projects/**/*.mdx'],
-    },
+  outputFileTracingIncludes: {
+    '/projects/*': ['./src/app/projects/**/*.mdx'],
   },
+  experimental: {},
 }
 
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypePrism],
+    remarkPlugins: [
+      'remark-gfm', // Using the package name as a string
+    ],
+    rehypePlugins: [
+      '@mapbox/rehype-prism', // Using the package name as a string
+    ],
   },
 })
 
