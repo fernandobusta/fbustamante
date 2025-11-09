@@ -26,15 +26,15 @@ function Tool({ title, href, children }) {
 }
 
 export const metadata = {
-  title: 'Uses',
-  description: 'Some of the companies I have worked for over the years.',
+  title: 'Work',
+  description: 'Professional Experience & Collaborations',
 }
 
-export default function Uses() {
+export default function Work() {
   return (
     <SimpleLayout
-      title="Some of the companies I have worked for over the years."
-      intro="I have a strong interest in Software Engineering and Cloud Infrastructure. Some of these companies have helped me develop an understanding of the telecom industry."
+      title="Professional Experience & Collaborations"
+      intro="I have a strong interest in telecom systems, network security, and software engineering. Through my work experience, I’ve gained a deep understanding of how signalling, connectivity, and infrastructure come together to keep mobile networks secure and efficient."
     >
       <div className="space-y-20">
         <ToolsSection title="Cellusys, Dublin">
@@ -43,13 +43,14 @@ export default function Uses() {
               August 2025 - Present
             </Subheading>
             <li>
-              Leading onsite deployments and integrations for telecom software solutions 
-              (SS7, Diameter, GTP, and 5G systems), ensuring seamless interoperability 
-              across client networks.
+              Leading onsite deployments and integrations for telecom software
+              solutions (SS7, Diameter, GTP, and 5G systems), ensuring seamless
+              interoperability across client networks.
             </li>
             <li>
-              Acting as a key technical liaison between operators and internal engineering teams, 
-              translating complex requirements into clear, actionable deliverables.
+              Acting as a key technical liaison between operators and internal
+              engineering teams, translating complex requirements into clear,
+              actionable deliverables.
             </li>
           </Tool>
         </ToolsSection>
@@ -101,7 +102,7 @@ export default function Uses() {
         <ToolsSection title="Athletic Boxing Club" subtitle="DCU, Dublin">
           <Tool title="Sponsorship & Events Officer">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2023 - Present
+              2023 - 2024
             </Subheading>
             Led sponsorship initiatives and managed over 100 members. Developed
             a new club website using Next.js driving over 60-member increase.
@@ -112,14 +113,14 @@ export default function Uses() {
         <ToolsSection title="Other Jobs">
           <Tool title="Private Tutor">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2019 - Present
+              2019 - 2025
             </Subheading>
             Maths, Languages, Programming, and Design
           </Tool>
 
           <Tool title="Waiter">
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2018 - 2022
+              2018 - 2021
             </Subheading>
             Wedding Catering and Restaurants
           </Tool>

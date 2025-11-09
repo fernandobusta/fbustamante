@@ -237,13 +237,15 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Fernando, BSc in Computer Science
+            Fernando Bustamante
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a final year Computer Science student at Dublin City University
-            (DCU). Most of my work experience has revolved around developing
-            software for the telecom industry. You can check out some of my
-            projects here!
+            I'm an Integration Engineer at Cellusys, where we build telecom
+            solutions that secure and optimise mobile networks worldwide. I hold
+            a B.Sc. in Computer Science from Dublin City University and am
+            passionate about 5G innovation, signalling intelligence, and
+            cybersecurity, turning complex systems into smarter, safer
+            connectivity.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
