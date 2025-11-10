@@ -2,20 +2,27 @@ import { NextResponse } from 'next/server'
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
-// Define all supported locales
+// --- Configuration ---
 let locales = ['en', 'es', 'fr', 'vi']
-let defaultLocale = 'en' // English is the default
+let defaultLocale = 'en'
+const COOKIE_NAME = 'NEXT_LOCALE'
 
-// Function to determine the best matching locale from the request headers
+// --- Helper Function: Get Preferred Locale (Server Side) ---
 function getLocale(request) {
-  // Negotiator expects a plain object
+  // 1. Check for the custom COOKIE_NAME first (HIGHEST PRIORITY)
+  const cookieLocale = request.cookies.get(COOKIE_NAME)?.value
+  if (cookieLocale && locales.includes(cookieLocale)) {
+    return cookieLocale
+  }
+
+  // 2. Fallback to Accept-Language header matching
   const headers = { 'accept-language': request.headers.get('accept-language') }
   let languages = new Negotiator({ headers }).languages()
 
-  // Match the preferred language(s) against the supported locales
   return match(languages, locales, defaultLocale)
 }
 
+// --- Middleware Core Logic ---
 export function proxy(request) {
   const { pathname } = request.nextUrl
 
@@ -24,21 +31,36 @@ export function proxy(request) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   )
 
-  // If a locale is found, let the request continue
-  if (pathnameHasLocale) return
+  // If the locale is in the URL, the path is already correct, so we stop here.
+  if (pathnameHasLocale) {
+    // We should also check if the URL locale matches the cookie locale.
+    // This is optional but ensures the cookie is always up-to-date with the URL.
+    const urlLocale = pathname.split('/')[1]
+    const cookieLocale = request.cookies.get(COOKIE_NAME)?.value
 
-  // 2. If no locale is found, determine the user's preferred locale
-  const locale = getLocale(request)
+    // If the URL locale is different from the cookie, update the cookie.
+    if (urlLocale !== cookieLocale) {
+      const response = NextResponse.next()
+      response.cookies.set(COOKIE_NAME, urlLocale, { path: '/' })
+      return response
+    }
 
-  // 3. Rewrite the URL to include the locale and redirect
+    return NextResponse.next()
+  }
+
+  // 2. Determine the preferred locale (using cookie preference first)
+  const locale = getLocale(request) // Reads the preferred locale
+
+  // 3. Create the redirect response object
   request.nextUrl.pathname = `/${locale}${pathname}`
-  // e.g. /products is rewritten to /en/products or /es/products
-  return NextResponse.redirect(request.nextUrl)
+  const response = NextResponse.redirect(request.nextUrl)
+
+  // 4. Set the cookie on the response so the browser saves the preferred locale.
+  response.cookies.set(COOKIE_NAME, locale, { path: '/', maxAge: 31536000 }) // Set maxAge for 1 year persistence
+
+  return response
 }
 
 export const config = {
-  matcher: [
-    // Skip all internal paths (_next) and static files
-    '/((?!_next|.*\\..*).*)',
-  ],
+  matcher: ['/((?!_next|.*\\..*).*)'],
 }
