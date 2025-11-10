@@ -6,5 +6,30 @@
     "p3": "I’m driven by complex systems, meaningful collaboration, and the challenge of turning technical depth into business impact. My goal is to continue growing as an engineer and communicator, contributing to a more secure, intelligent, and connected telecom ecosystem.",
     "github": "Follow on GitHub",
     "linkedin": "Follow on LinkedIn"
+  },
+  "websites": {
+    "intro_p1": "Your website is your most critical business asset. We engineer digital solutions that go beyond looks—creating high-performing, reliable assets that solve problems and convert visitors.",
+    "quote_heading": "Digital Engineering That Drives Business Growth",
+    "section_visible_title": "**What You See:** Polished Front-Ends.",
+    "item_design_strong": "Impactful Design.",
+    "item_design_desc": "Capturing attention while reflecting your professional brand.",
+    "item_ux_strong": "Superior UX.",
+    "item_ux_desc": "Ensuring visitors find what they need instantly, reducing friction.",
+    "item_tech_strong": "Modern Tech.",
+    "item_tech_desc": "Delivering superior performance and SEO for every site (e.g., Next.js).",
+    "section_invisible_title": "**What You Don't See:** The Operational Advantage.",
+    "section_invisible_p1": "The true ROI often comes from the systems running behind the scenes. While confidential, this experience proves we build powerful, custom solutions:",
+    "section_invisible_quote": "*If you can imagine a process, we can build the system for it.*",
+    "item_platforms_strong": "Custom Platforms.",
+    "item_platforms_desc": "Bespoke booking systems and client portals tailored exactly to your workflow.",
+    "item_data_strong": "Data & Intelligence.",
+    "item_data_desc": "Developing KPI dashboards and analytics tools that turn data into clear, actionable strategy.",
+    "item_security_strong": "Reliable Security.",
+    "item_security_desc": "Architecting secure foundations for all your sensitive operational data.",
+    "outro": "Stop adapting to off-the-shelf software. **Let's build technology that adapts perfectly to your business.**",
+    "alert_email_text": "Send me an email at fbustamantedelriob@gmail.com",
+    "alert_email_action": "Click to Email!",
+    "alert_linkedin_text": "Send me an email or Linked-in message if you want to inquire about building your website!",
+    "alert_linkedin_action": "Profile"
   }
 }

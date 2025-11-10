@@ -6,5 +6,30 @@
     "p3": "Je suis motivé par les systèmes complexes, la collaboration significative et le défi de transformer la profondeur technique en impact commercial. Mon objectif est de continuer à grandir en tant qu’ingénieur et communicateur, contribuant à un écosystème de télécommunications plus sécurisé, intelligent et connecté.",
     "github": "Suivre sur GitHub",
     "linkedin": "Suivre sur LinkedIn"
+  },
+  "websites": {
+    "intro_p1": "Votre site web est votre atout commercial le plus critique. Nous concevons des solutions numériques qui vont au-delà de l'apparence, créant des actifs fiables et performants qui résolvent les problèmes et convertissent les visiteurs.",
+    "quote_heading": "Ingénierie Numérique Qui Stimule la Croissance de l'Entreprise",
+    "section_visible_title": "**Ce Que Vous Voyez :** Interfaces Utilisateur Soignées.",
+    "item_design_strong": "Design Impactant.",
+    "item_design_desc": "Capturer l'attention tout en reflétant votre image de marque professionnelle.",
+    "item_ux_strong": "UX Supérieure.",
+    "item_ux_desc": "Garantir que les visiteurs trouvent instantanément ce dont ils ont besoin, réduisant la friction.",
+    "item_tech_strong": "Technologie Moderne.",
+    "item_tech_desc": "Offrir des performances supérieures et un meilleur SEO pour chaque site (par exemple, Next.js).",
+    "section_invisible_title": "**Ce Que Vous Ne Voyez Pas :** L'Avantage Opérationnel.",
+    "section_invisible_p1": "Le véritable ROI provient souvent des systèmes fonctionnant en coulisses. Bien que confidentielle, cette expérience prouve que nous construisons des solutions personnalisées et puissantes :",
+    "section_invisible_quote": "*Si vous pouvez imaginer un processus, nous pouvons construire le système pour le réaliser.*",
+    "item_platforms_strong": "Plateformes Sur Mesure.",
+    "item_platforms_desc": "Systèmes de réservation et portails clients personnalisés, adaptés exactement à votre flux de travail.",
+    "item_data_strong": "Données et Intelligence.",
+    "item_data_desc": "Développement de tableaux de bord KPI et d'outils d'analyse qui transforment les données en stratégie claire et exploitable.",
+    "item_security_strong": "Sécurité Fiable.",
+    "item_security_desc": "Conception d'architectures sécurisées pour toutes vos données opérationnelles sensibles.",
+    "outro": "Arrêtez de vous adapter à des logiciels prêts à l'emploi. **Construisons une technologie qui s'adapte parfaitement à votre entreprise.**",
+    "alert_email_text": "Envoyez-moi un e-mail à fbustamantedelriob@gmail.com",
+    "alert_email_action": "Cliquez pour Envoyer un Email !",
+    "alert_linkedin_text": "Envoyez-moi un e-mail ou un message Linked-in si vous souhaitez vous renseigner sur la création de votre site web !",
+    "alert_linkedin_action": "Profil"
   }
 }

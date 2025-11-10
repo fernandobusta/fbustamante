@@ -6,5 +6,30 @@
     "p3": "Tôi bị thúc đẩy bởi các hệ thống phức tạp, sự hợp tác có ý nghĩa và thách thức biến chiều sâu kỹ thuật thành tác động kinh doanh. Mục tiêu của tôi là tiếp tục phát triển với tư cách là một kỹ sư và người giao tiếp, đóng góp vào một hệ sinh thái viễn thông an toàn, thông minh và được kết nối hơn.",
     "github": "Theo dõi trên GitHub",
     "linkedin": "Theo dõi trên LinkedIn"
+  },
+  "websites": {
+    "intro_p1": "Trang web là tài sản kinh doanh quan trọng nhất của bạn. Chúng tôi thiết kế các giải pháp kỹ thuật số không chỉ đẹp mắt—mà còn tạo ra các tài sản hiệu suất cao, đáng tin cậy, giải quyết vấn đề và chuyển đổi khách truy cập.",
+    "quote_heading": "Kỹ Thuật Số Thúc Đẩy Tăng Trưởng Kinh Doanh",
+    "section_visible_title": "**Những Gì Bạn Thấy:** Giao Diện Người Dùng Hoàn Thiện.",
+    "item_design_strong": "Thiết Kế Ấn Tượng.",
+    "item_design_desc": "Thu hút sự chú ý trong khi phản ánh thương hiệu chuyên nghiệp của bạn.",
+    "item_ux_strong": "Trải Nghiệm Người Dùng Vượt Trội (UX).",
+    "item_ux_desc": "Đảm bảo khách truy cập tìm thấy những gì họ cần ngay lập tức, giảm ma sát.",
+    "item_tech_strong": "Công Nghệ Hiện Đại.",
+    "item_tech_desc": "Mang lại hiệu suất và SEO vượt trội cho mọi trang web (ví dụ: Next.js).",
+    "section_invisible_title": "**Những Gì Bạn Không Thấy:** Lợi Thế Vận Hành.",
+    "section_invisible_p1": "ROI thực sự thường đến từ các hệ thống chạy ẩn sau hậu trường. Mặc dù bí mật, kinh nghiệm này chứng minh chúng tôi xây dựng các giải pháp tùy chỉnh, mạnh mẽ:",
+    "section_invisible_quote": "*Nếu bạn có thể hình dung một quy trình, chúng tôi có thể xây dựng hệ thống cho quy trình đó.*",
+    "item_platforms_strong": "Nền Tảng Tùy Chỉnh.",
+    "item_platforms_desc": "Hệ thống đặt lịch và cổng thông tin khách hàng được thiết kế riêng, điều chỉnh chính xác theo quy trình làm việc của bạn.",
+    "item_data_strong": "Dữ Liệu và Trí Tuệ.",
+    "item_data_desc": "Phát triển các bảng điều khiển KPI và công cụ phân tích biến dữ liệu thành chiến lược rõ ràng, khả thi.",
+    "item_security_strong": "Bảo Mật Đáng Tin Cậy.",
+    "item_security_desc": "Kiến trúc các nền tảng bảo mật cho tất cả dữ liệu vận hành nhạy cảm của bạn.",
+    "outro": "Đừng thích nghi với phần mềm có sẵn. **Hãy cùng xây dựng công nghệ thích ứng hoàn hảo với doanh nghiệp của bạn.**",
+    "alert_email_text": "Gửi email cho tôi tại fbustamantedelriob@gmail.com",
+    "alert_email_action": "Nhấp để Gửi Email!",
+    "alert_linkedin_text": "Gửi email hoặc tin nhắn Linked-in cho tôi nếu bạn muốn hỏi về việc xây dựng trang web của mình!",
+    "alert_linkedin_action": "Hồ Sơ"
   }
 }

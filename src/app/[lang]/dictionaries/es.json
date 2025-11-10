@@ -6,5 +6,30 @@
     "p3": "Me impulsan los sistemas complejos, la colaboración significativa y el desafío de convertir la profundidad técnica en impacto empresarial. Mi objetivo es seguir creciendo como ingeniero y comunicador, contribuyendo a un ecosistema de telecomunicaciones más seguro, inteligente y conectado.",
     "github": "Seguir en GitHub",
     "linkedin": "Seguir en LinkedIn"
+  },
+  "websites": {
+    "intro_p1": "Su sitio web es su activo comercial más crítico. Diseñamos soluciones digitales que van más allá de la apariencia, creando activos confiables y de alto rendimiento que resuelven problemas y convierten visitantes.",
+    "quote_heading": "Ingeniería Digital Que Impulsa el Crecimiento Empresarial",
+    "section_visible_title": "**Lo Que Ve:** Interfaces Pulidas.",
+    "item_design_strong": "Diseño Impactante.",
+    "item_design_desc": "Capturando la atención mientras refleja su marca profesional.",
+    "item_ux_strong": "UX Superior.",
+    "item_ux_desc": "Asegurando que los visitantes encuentren lo que necesitan al instante, reduciendo la fricción.",
+    "item_tech_strong": "Tecnología Moderna.",
+    "item_tech_desc": "Ofreciendo rendimiento superior y SEO para cada sitio (p. ej., Next.js).",
+    "section_invisible_title": "**Lo Que No Ve:** La Ventaja Operativa.",
+    "section_invisible_p1": "El verdadero Retorno de Inversión (ROI) a menudo proviene de los sistemas que se ejecutan detrás de escena. Aunque es confidencial, esta experiencia demuestra que construimos soluciones personalizadas y potentes:",
+    "section_invisible_quote": "*Si puede imaginar un proceso, podemos construir el sistema para él.*",
+    "item_platforms_strong": "Plataformas Personalizadas.",
+    "item_platforms_desc": "Sistemas de reserva y portales de clientes a medida, adaptados exactamente a su flujo de trabajo.",
+    "item_data_strong": "Datos e Inteligencia.",
+    "item_data_desc": "Desarrollo de cuadros de mando KPI y herramientas de análisis que convierten los datos en estrategias claras y procesables.",
+    "item_security_strong": "Seguridad Confiable.",
+    "item_security_desc": "Diseño de arquitecturas seguras para todos sus datos operativos sensibles.",
+    "outro": "Deje de adaptarse a software estándar. **Construyamos tecnología que se adapte perfectamente a su negocio.**",
+    "alert_email_text": "Envíeme un correo electrónico a fbustamantedelriob@gmail.com",
+    "alert_email_action": "¡Clic para Enviar Email!",
+    "alert_linkedin_text": "¡Envíeme un correo electrónico o un mensaje de Linked-in si desea consultar sobre la creación de su sitio web!",
+    "alert_linkedin_action": "Perfil"
   }
 }

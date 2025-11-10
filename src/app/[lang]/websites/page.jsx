@@ -11,6 +11,9 @@ import {
   AdjustmentsHorizontalIcon,
 } from '@heroicons/react/20/solid'
 
+import { getDictionary } from '../dictionaries'
+import MarkdownRenderer from '@/components/MarkdownRenderer'
+
 // Web images
 import bizimagineImage from '@/images/websites/bizimagine.jpeg'
 import delrioabogados from '@/images/websites/drbabogados.jpeg'
@@ -117,25 +120,22 @@ const posts = [
   },
 ]
 
-function WebsitesInfo() {
+async function WebsitesInfo({ lang }) {
+  const dict = await getDictionary(lang)
+  const wDict = dict.websites
   return (
     <div className="pb-6">
-      <p className="pb-4">
-        Your website is your most critical business asset. We engineer digital
-        solutions that go beyond looks—creating high-performing, reliable assets
-        that solve problems and convert visitors.
-      </p>
-
+      <MarkdownRenderer markdownText={wDict.intro_p1} className="pb-4" />
       <figure className="border-l border-indigo-600 pl-8 dark:border-indigo-400">
         <blockquote className="text-xl/8 font-semibold tracking-tight text-gray-900 dark:text-white">
-          <p>Digital Engineering That Drives Business Growth</p>
+          <p>{wDict.quote_heading}</p>
         </blockquote>
       </figure>
-
       <div className="">
-        <p className="pb-4 pt-6">
-          <strong>What You See:</strong> Polished Front-Ends.
-        </p>
+        <MarkdownRenderer
+          markdownText={wDict.section_visible_title}
+          className="pb-4 pt-6"
+        />
 
         <ul
           role="list"
@@ -148,9 +148,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Impactful Design.
+                {wDict.item_design_strong}
               </strong>{' '}
-              Capturing attention while reflecting your professional brand.
+              {wDict.item_design_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -160,10 +160,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Superior UX.
+                {wDict.item_ux_strong}
               </strong>{' '}
-              Ensuring visitors find what they need instantly, reducing
-              friction.
+              {wDict.item_ux_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -173,28 +172,20 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Modern Tech.
+                {wDict.item_tech_strong}
               </strong>{' '}
-              Delivering superior performance and SEO for every site (e.g.,
-              Next.js).
+              {wDict.item_tech_desc}
             </span>
           </li>
         </ul>
         <div className="pb-4 pt-6">
-          <p className="pb-2">
-            <strong>What You Don't See:</strong> The Operational Advantage.
-          </p>
-          <p>
-            The true ROI often comes from the systems running behind the scenes.
-            While confidential, this experience proves we build powerful, custom
-            solutions: <br />
-            <i>
-              <strong>
-                {' '}
-                If you can imagine a process, we can build the system for it.
-              </strong>
-            </i>
-          </p>
+          <MarkdownRenderer
+            markdownText={wDict.section_invisible_title}
+            className="pb-2"
+          />
+          <MarkdownRenderer
+            markdownText={`${wDict.section_invisible_p1} \n\n${wDict.section_invisible_quote}`}
+          />
         </div>
         <ul
           role="list"
@@ -207,10 +198,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Custom Platforms.
+                {wDict.item_platforms_strong}
               </strong>{' '}
-              Bespoke booking systems and client portals tailored exactly to
-              your workflow.
+              {wDict.item_platforms_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -220,10 +210,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Data & Intelligence.
+                {wDict.item_data_strong}
               </strong>{' '}
-              Developing KPI dashboards and analytics tools that turn data into
-              clear, actionable strategy.
+              {wDict.item_data_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -233,39 +222,36 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Reliable Security.
+                {wDict.item_security_strong}
               </strong>{' '}
-              Architecting secure foundations for all your sensitive operational
-              data.
+              {wDict.item_security_desc}
             </span>
           </li>
         </ul>
 
-        <p className="pt-4">
-          Stop adapting to off-the-shelf software.{' '}
-          <strong>
-            Let's build technology that adapts perfectly to your business.
-          </strong>
-        </p>
+        <MarkdownRenderer markdownText={wDict.outro} className="pt-4" />
       </div>
     </div>
   )
 }
 
-export default function Websites() {
+export default async function Websites({ params }) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  const wDict = dict.websites
   return (
     <SimpleLayout title="Website Portfolio" marginClass="mt-6 sm:mt-10">
       <div className="pb-6">
         <InfoAlert
-          text="Send me an email at fbustamantedelriob@gmail.com"
-          action="Click to Email!"
+          text={wDict.alert_email_text}
+          action={wDict.alert_email_action}
           link="mailto:fbustamantedelriob@gmail.com?subject=Website%20Portfolio%20Inquiry"
         />
       </div>
-      <WebsitesInfo />
+      <WebsitesInfo lang={lang} />
       <InfoAlert
-        text="Send me an email or Linked-in message if you want to inquire about building your website!"
-        action="Profile"
+        text={wDict.alert_linkedin_text}
+        action={wDict.alert_linkedin_action}
         link="https://www.linkedin.com/in/fernandobustamantedelrio-bourman/"
       />
 
