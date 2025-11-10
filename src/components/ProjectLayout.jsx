@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-import { AppContext } from '@/app/providers'
+import { AppContext } from '@/app/[lang]/providers'
 import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 

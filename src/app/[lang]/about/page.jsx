@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
+import { getDictionary } from '../dictionaries'
+import MarkdownRenderer from '@/components/MarkdownRenderer'
+
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/sistem-pitch.jpeg'
@@ -36,7 +39,10 @@ export const metadata = {
   description: 'I’m Fernando, currently living in Dublin.',
 }
 
-export default function About() {
+export default async function Page({ params }) {
+  // `lang` will be 'en', 'es', 'fr', or 'vi' based on the route segment (/en/...)
+  const { lang } = await params
+  const dict = await getDictionary(lang)
   return (
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -52,42 +58,17 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I´m Fernando, an Integrations Engineer at Cellusys
+            {dict.about.heading}
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              I am an Integration Engineer at <strong>Cellusys</strong>, where
-              we design, deploy, and integrate advanced telecom software
-              solutions that keep mobile networks secure, efficient, and
-              intelligent. Our systems protect critical signalling traffic and
-              help operators gain visibility, control, and monetisation
-              opportunities across their networks.
-            </p>
-            <p>
-              I have a strong background in
-              <strong>
-                software engineering, networking, and telecom protocols
-              </strong>
-              , with hands-on expertise across SS7, Diameter, GTP, and 5G
-              technologies. I’m deeply passionate about
-              <strong>
-                5G innovation, signalling intelligence, and cybersecurity in
-                telecom
-              </strong>
-              — helping build solutions that strengthen network resilience while
-              enabling operators to deliver safer and smarter connectivity.
-              Alongside the technical, I also focus on the{' '}
-              <strong>human side of engineering</strong>: improving how we
-              communicate with customers, foster trust, and deliver exceptional
-              service.
-            </p>
-            <p>
-              I’m driven by complex systems, meaningful collaboration, and the
-              challenge of turning technical depth into business impact. My goal
-              is to continue growing as an engineer and communicator,
-              contributing to a more secure, intelligent, and connected telecom
-              ecosystem.
-            </p>
+            {/* Paragraph 1 */}
+            <MarkdownRenderer markdownText={dict.about.p1} className="mb-7" />
+
+            {/* Paragraph 2 */}
+            <MarkdownRenderer markdownText={dict.about.p2} className="mb-7" />
+
+            {/* Paragraph 3 */}
+            <MarkdownRenderer markdownText={dict.about.p3} />
           </div>
         </div>
         <div className="lg:pl-20">

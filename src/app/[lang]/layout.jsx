@@ -1,4 +1,4 @@
-import { Providers } from '@/app/providers'
+import { Providers } from '@/app/[lang]/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
