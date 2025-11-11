@@ -69,5 +69,48 @@
         "author_role": "Interim Management"
       }
     ]
+  },
+  "work_page": {
+    "title": "Professional Experience & Collaborations",
+    "intro": "I have a strong interest in telecom systems, network security, and software engineering. Through my work experience, I’ve gained a deep understanding of how signalling, connectivity, and infrastructure come together to keep mobile networks secure and efficient.",
+    "cellusys_dublin": "Cellusys, Dublin",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid",
+    "dcu_abc": "Athletic Boxing Club",
+    "dcu_abc_subtitle": "DCU, Dublin",
+    "other_jobs": "Other Jobs",
+
+    "integration_engineer": "Integration Engineer",
+    "se_cellusys": "Software Engineer",
+    "se_intern": "Software Engineer Intern",
+    "sponsorship_officer": "Sponsorship & Events Officer",
+    "private_tutor": "Private Tutor",
+    "waiter": "Waiter",
+    "volunteer": "Volunteer",
+
+    "date_ie": "August 2025 - Present",
+    "date_se": "March 2024 - September 2024 and May 2023 - August 2023",
+    "date_se_intern": "June 2022 - September 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Leading onsite deployments and integrations for telecom software solutions (SS7, Diameter, GTP, and 5G systems), ensuring seamless interoperability across client networks.",
+    "ie_b2": "Acting as a key technical liaison between operators and internal engineering teams, translating complex requirements into clear, actionable deliverables.",
+
+    "se_b1": "Contributed to the development of key roaming products for telecom operators, including Steering of Roaming, Roam Welcome and Anti-Steering of Roaming Detection.",
+    "se_b2": "Collaborated within an Agile development team to enhance product features and improve system performance.",
+    "se_b3": "Utilised a diverse tech stack, including Clojure, JavaScript, Java, ElasticSearch, AngularJS, and Kibana to build and optimise software solutions.",
+    "se_b4": "Gained hands-on experience and a solid understanding of telecom protocols and technologies, such as SS7, Diameter and SIP, with exposure to LTE/VoLTE and 5G-NR advancements.",
+
+    "se_intern_b1": "Developed and maintained full stack web applications using Django, leveraging tools like Plotly, Dash, SQL, and Streamlit to create dynamic and interactive interfaces.",
+    "se_intern_b2": "Automated key processes with UI Vision and Python, streamlining workflows and increasing operational efficiency.",
+    "se_intern_b3": "Performed KPI analysis on cell tower data for multinational telec",
+
+    "officer_text": "Led sponsorship initiatives and managed over 100 members. Developed a new club website using Next.js driving over 60-member increase. Coordinated events and contributed to a 3-year growth plan.",
+    "tutor_text": "Maths, Languages, Programming, and Design",
+    "waiter_text": "Wedding Catering and Restaurants",
+    "volunteer_text": "Oxfam, Bath, UK"
   }
 }

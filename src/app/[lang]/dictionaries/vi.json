@@ -68,5 +68,48 @@
         "author_role": "Quản Lý Tạm Thời"
       }
     ]
+  },
+  "work_page": {
+    "title": "Kinh Nghiệm Chuyên Môn và Hợp Tác",
+    "intro": "Tôi có niềm đam mê mạnh mẽ với các hệ thống viễn thông, bảo mật mạng và kỹ thuật phần mềm. Thông qua kinh nghiệm làm việc, tôi đã đạt được sự hiểu biết sâu sắc về cách báo hiệu, kết nối và cơ sở hạ tầng kết hợp với nhau để giữ cho mạng di động an toàn và hiệu quả.",
+    "cellusys_dublin": "Cellusys, Dublin",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid",
+    "dcu_abc": "Câu Lạc Bộ Quyền Anh Thể Thao",
+    "dcu_abc_subtitle": "DCU, Dublin",
+    "other_jobs": "Công Việc Khác",
+
+    "integration_engineer": "Kỹ Sư Tích Hợp",
+    "se_cellusys": "Kỹ Sư Phần Mềm",
+    "se_intern": "Thực Tập Sinh Kỹ Sư Phần Mềm",
+    "sponsorship_officer": "Cán Bộ Tài Trợ & Sự Kiện",
+    "private_tutor": "Gia Sư Riêng",
+    "waiter": "Phục Vụ Bàn",
+    "volunteer": "Tình Nguyện Viên",
+
+    "date_ie": "Tháng 8 năm 2025 - Hiện tại",
+    "date_se": "Tháng 3 năm 2024 - Tháng 9 năm 2024 và Tháng 5 năm 2023 - Tháng 8 năm 2023",
+    "date_se_intern": "Tháng 6 năm 2022 - Tháng 9 năm 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Dẫn đầu các hoạt động triển khai và tích hợp tại chỗ cho các giải pháp phần mềm viễn thông (hệ thống SS7, Diameter, GTP và 5G), đảm bảo khả năng tương tác liền mạch trên mạng lưới khách hàng.",
+    "ie_b2": "Đóng vai trò là đầu mối kỹ thuật quan trọng giữa các nhà khai thác và các nhóm kỹ thuật nội bộ, chuyển đổi các yêu cầu phức tạp thành các kết quả rõ ràng, khả thi.",
+
+    "se_b1": "Đã đóng góp vào việc phát triển các sản phẩm chuyển vùng (roaming) quan trọng cho các nhà khai thác viễn thông, bao gồm Steering of Roaming, Roam Welcome và phát hiện Anti-Steering of Roaming.",
+    "se_b2": "Đã hợp tác trong một nhóm phát triển Agile để nâng cao tính năng sản phẩm và cải thiện hiệu suất hệ thống.",
+    "se_b3": "Đã sử dụng một ngăn xếp công nghệ đa dạng, bao gồm Clojure, JavaScript, Java, ElasticSearch, AngularJS và Kibana để xây dựng và tối ưu hóa các giải pháp phần mềm.",
+    "se_b4": "Đã có kinh nghiệm thực tế và sự hiểu biết vững chắc về các giao thức và công nghệ viễn thông, như SS7, Diameter và SIP, cùng với sự tiếp xúc với các tiến bộ LTE/VoLTE và 5G-NR.",
+
+    "se_intern_b1": "Đã phát triển và duy trì các ứng dụng web full stack sử dụng Django, tận dụng các công cụ như Plotly, Dash, SQL và Streamlit để tạo giao diện động và tương tác.",
+    "se_intern_b2": "Đã tự động hóa các quy trình chính bằng UI Vision và Python, sắp xếp hợp lý các quy trình làm việc và tăng hiệu quả hoạt động.",
+    "se_intern_b3": "Đã thực hiện phân tích KPI trên dữ liệu tháp di động cho công ty viễn thông đa quốc gia",
+
+    "officer_text": "Dẫn đầu các sáng kiến tài trợ và quản lý hơn 100 thành viên. Phát triển trang web mới cho câu lạc bộ bằng Next.js, giúp tăng hơn 60 thành viên. Điều phối các sự kiện và đóng góp vào kế hoạch tăng trưởng 3 năm.",
+    "tutor_text": "Toán học, Ngôn ngữ, Lập trình và Thiết kế",
+    "waiter_text": "Phục vụ Tiệc cưới và Nhà hàng",
+    "volunteer_text": "Oxfam, Bath, Vương quốc Anh"
   }
 }

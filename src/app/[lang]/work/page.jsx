@@ -3,6 +3,7 @@ import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Subheading } from '@/components/heading'
 import Link from 'next/link'
+import { getDictionary } from '../dictionaries'
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -30,106 +31,82 @@ export const metadata = {
   description: 'Professional Experience & Collaborations',
 }
 
-export default function Work() {
+export default async function Work({ params }) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  const wDict = dict.work_page
+
   return (
-    <SimpleLayout
-      title="Professional Experience & Collaborations"
-      intro="I have a strong interest in telecom systems, network security, and software engineering. Through my work experience, I’ve gained a deep understanding of how signalling, connectivity, and infrastructure come together to keep mobile networks secure and efficient."
-    >
+    <SimpleLayout title={wDict.title} intro={wDict.intro}>
       <div className="space-y-20">
-        <ToolsSection title="Cellusys, Dublin">
-          <Tool title="Integration Engineer">
+        {/* Cellusys - Integration Engineer */}
+        <ToolsSection title={wDict.cellusys_dublin}>
+          <Tool title={wDict.integration_engineer}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              August 2025 - Present
+              {wDict.date_ie}
             </Subheading>
-            <li>
-              Leading onsite deployments and integrations for telecom software
-              solutions (SS7, Diameter, GTP, and 5G systems), ensuring seamless
-              interoperability across client networks.
-            </li>
-            <li>
-              Acting as a key technical liaison between operators and internal
-              engineering teams, translating complex requirements into clear,
-              actionable deliverables.
-            </li>
+            <li>{wDict.ie_b1}</li>
+            <li>{wDict.ie_b2}</li>
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Cellusys, Dublin">
-          <Tool title="Software Engineer">
+        {/* Cellusys - Software Engineer */}
+        <ToolsSection title={wDict.cellusys_dublin}>
+          <Tool title={wDict.se_cellusys}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              March 2024 - September 2024 and May 2023 - August 2023
+              {wDict.date_se}
             </Subheading>
-            <li>
-              Contributed to the development of key roaming products for telecom
-              operators, including Steering of Roaming, Roam Welcome and
-              Anti-Steering of Roaming Detection.
-            </li>
-            <li>
-              Collaborated within an Agile development team to enhance product
-              features and improve system performance.
-            </li>
-            <li>
-              Utilised a diverse tech stack, including Clojure, JavaScript,
-              Java, ElasticSearch, AngularJS, and Kibana to build and optimise
-              software solutions.
-            </li>
-            <li>
-              Gained hands-on experience and a solid understanding of telecom
-              protocols and technologies, such as SS7, Diameter and SIP, with
-              exposure to LTE/VoLTE and 5G-NR advancements.
-            </li>
+            <li>{wDict.se_b1}</li>
+            <li>{wDict.se_b2}</li>
+            <li>{wDict.se_b3}</li>
+            <li>{wDict.se_b4}</li>
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Future Connections" subtitle="Madrid">
-          <Tool title="Software Engineer Intern">
+        {/* Future Connections - Software Engineer Intern */}
+        <ToolsSection
+          title={wDict.future_connections}
+          subtitle={wDict.future_connections_subtitle}
+        >
+          <Tool title={wDict.se_intern}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              June 2022 - September 2022
+              {wDict.date_se_intern}
             </Subheading>
-            <li>
-              Developed and maintained full stack web applications using Django,
-              leveraging tools like Plotly, Dash, SQL, and Streamlit to create
-              dynamic and interactive interfaces.
-            </li>
-            <li>
-              Automated key processes with UI Vision and Python, streamlining
-              workflows and increasing operational efficiency.
-            </li>
-            <li>
-              Performed KPI analysis on cell tower data for multinational telec
-            </li>
+            <li>{wDict.se_intern_b1}</li>
+            <li>{wDict.se_intern_b2}</li>
+            <li>{wDict.se_intern_b3}</li>
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Athletic Boxing Club" subtitle="DCU, Dublin">
-          <Tool title="Sponsorship & Events Officer">
+        {/* Athletic Boxing Club - Sponsorship & Events Officer */}
+        <ToolsSection title={wDict.dcu_abc} subtitle={wDict.dcu_abc_subtitle}>
+          <Tool title={wDict.sponsorship_officer}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2023 - 2024
+              {wDict.date_officer}
             </Subheading>
-            Led sponsorship initiatives and managed over 100 members. Developed
-            a new club website using Next.js driving over 60-member increase.
-            Coordinated events and contributed to a 3-year growth plan.
+            {/* The Link stays outside the dictionary */}
+            {wDict.officer_text}
             <Link href="https://www.dcuboxing.com">dcuboxing.com</Link>
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Other Jobs">
-          <Tool title="Private Tutor">
+        {/* Other Jobs */}
+        <ToolsSection title={wDict.other_jobs}>
+          <Tool title={wDict.private_tutor}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2019 - 2025
+              {wDict.date_tutor}
             </Subheading>
-            Maths, Languages, Programming, and Design
+            {wDict.tutor_text}
           </Tool>
 
-          <Tool title="Waiter">
+          <Tool title={wDict.waiter}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2018 - 2021
+              {wDict.date_waiter}
             </Subheading>
-            Wedding Catering and Restaurants
+            {wDict.waiter_text}
           </Tool>
 
-          <Tool title="Volunteer">
+          <Tool title={wDict.volunteer}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
-              2016 - 2017
+              {wDict.date_volunteer}
             </Subheading>
-            Oxfam, Bath, UK
+            {wDict.volunteer_text}
           </Tool>
         </ToolsSection>
       </div>

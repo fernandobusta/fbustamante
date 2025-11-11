@@ -68,5 +68,48 @@
         "author_role": "Gestion de Transition"
       }
     ]
+  },
+  "work_page": {
+    "title": "Expérience Professionnelle et Collaborations",
+    "intro": "J'ai un fort intérêt pour les systèmes de télécommunication, la sécurité réseau et l'ingénierie logicielle. Grâce à mon expérience professionnelle, j'ai acquis une compréhension approfondie de la façon dont la signalisation, la connectivité et l'infrastructure se rejoignent pour maintenir les réseaux mobiles sécurisés et efficaces.",
+    "cellusys_dublin": "Cellusys, Dublin",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid",
+    "dcu_abc": "Club de Boxe Athlétique",
+    "dcu_abc_subtitle": "DCU, Dublin",
+    "other_jobs": "Autres Emplois",
+
+    "integration_engineer": "Ingénieur d'Intégration",
+    "se_cellusys": "Ingénieur Logiciel",
+    "se_intern": "Stagiaire en Génie Logiciel",
+    "sponsorship_officer": "Responsable des Commandites et Événements",
+    "private_tutor": "Tuteur Privé",
+    "waiter": "Serveur",
+    "volunteer": "Bénévole",
+
+    "date_ie": "Août 2025 - Présent",
+    "date_se": "Mars 2024 - Septembre 2024 et Mai 2023 - Août 2023",
+    "date_se_intern": "Juin 2022 - Septembre 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Diriger les déploiements et intégrations sur site pour les solutions logicielles de télécommunication (systèmes SS7, Diameter, GTP et 5G), assurant une interopérabilité sans faille sur les réseaux clients.",
+    "ie_b2": "Agir comme un lien technique clé entre les opérateurs et les équipes d'ingénierie internes, traduisant les exigences complexes en livrables clairs et réalisables.",
+
+    "se_b1": "Contribution au développement de produits d'itinérance clés pour les opérateurs de télécommunication, y compris le Steering of Roaming, Roam Welcome et la Détection Anti-Steering of Roaming.",
+    "se_b2": "Collaboration au sein d'une équipe de développement Agile pour améliorer les fonctionnalités des produits et les performances du système.",
+    "se_b3": "Utilisation d'une pile technologique diversifiée, incluant Clojure, JavaScript, Java, ElasticSearch, AngularJS et Kibana pour construire et optimiser des solutions logicielles.",
+    "se_b4": "Acquisition d'une expérience pratique et d'une solide compréhension des protocoles et technologies de télécommunication, tels que SS7, Diameter et SIP, avec une exposition aux avancées LTE/VoLTE et 5G-NR.",
+
+    "se_intern_b1": "Développement et maintenance d'applications web full stack utilisant Django, tirant parti d'outils comme Plotly, Dash, SQL et Streamlit pour créer des interfaces dynamiques et interactives.",
+    "se_intern_b2": "Automatisation des processus clés avec UI Vision et Python, rationalisant les flux de travail et augmentant l'efficacité opérationnelle.",
+    "se_intern_b3": "Réalisation d'analyses de KPI sur les données des tours de téléphonie cellulaire pour les multinationales de télécommunication",
+
+    "officer_text": "Direction des initiatives de parrainage et gestion de plus de 100 membres. Développement d'un nouveau site web du club utilisant Next.js, entraînant une augmentation de plus de 60 membres. Coordination d'événements et contribution à un plan de croissance sur 3 ans.",
+    "tutor_text": "Mathématiques, Langues, Programmation et Design",
+    "waiter_text": "Restauration de Mariage et Restaurants",
+    "volunteer_text": "Oxfam, Bath, Royaume-Uni"
   }
 }
