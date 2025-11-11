@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { getDictionary } from './dictionaries'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
@@ -107,7 +109,7 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Role({ role }) {
+function Role({ role, hDict }) {
   let startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
   let startDate =
@@ -138,7 +140,7 @@ function Role({ role }) {
         <dt className="sr-only">Date</dt>
         <dd
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
+          aria-label={`${startLabel} ${hDict.role_date_separator} ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
           <span aria-hidden="true">—</span>{' '}
@@ -149,35 +151,43 @@ function Role({ role }) {
   )
 }
 
-function Resume() {
+function Resume({ hDict }) {
   let resume = [
     {
       company: 'Cellusys',
+      localizedCompany: hDict.company_cellusys,
       imageClass: 'rounded-full',
       title: 'Integration Engineer',
+      localizedTitle: hDict.title_ie,
       logo: logoCellusys,
       start: '2025',
-      end: 'Present',
+      end: hDict.date_present,
     },
     {
       company: 'Cellusys',
+      localizedCompany: hDict.company_cellusys,
       imageClass: 'rounded-full',
       title: 'Software Engineer',
+      localizedTitle: hDict.title_se,
       logo: logoCellusys,
       start: '2023',
       end: '2024',
     },
     {
       company: 'DCU Boxing Club',
+      localizedCompany: hDict.company_dcu_abc,
       imageClass: 'rounded-full',
       title: 'Sponsorship & Events Officer',
+      localizedTitle: hDict.title_officer,
       logo: logoBoxing,
       start: '2023',
       end: '2024',
     },
     {
       company: 'Future Connections',
+      localizedCompany: hDict.company_future,
       title: 'Software Engineer Intern',
+      localizedTitle: hDict.title_se_intern,
       imageClass: 'rounded-full',
       logo: logoFuture,
       start: '2022',
@@ -185,49 +195,59 @@ function Resume() {
     },
     {
       company: 'Private Events',
+      localizedCompany: hDict.company_private_events,
       title: 'Wedding Catering and Restaurants',
+      localizedTitle: hDict.title_waiter,
       logo: waiter,
       start: '2018',
       end: '2022',
     },
     {
       company: 'Private Tutor',
+      localizedCompany: hDict.company_private_tutor,
       title: 'Maths, Languages and Others',
+      localizedTitle: hDict.title_tutor,
       logo: tutor,
       start: '2019',
       end: '2024',
     },
     {
       company: 'Oxfam',
+      localizedCompany: hDict.company_oxfam,
       title: 'Volunteer',
+      localizedTitle: hDict.title_volunteer,
       logo: logoOxfam,
       start: '2016',
       end: '2017',
     },
   ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <Link href="work">
         <h2 className="flex text-sm font-semibold text-zinc-900 hover:text-teal-500 dark:text-zinc-100 dark:hover:text-teal-400">
           <BriefcaseIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Work</span>
+          <span className="ml-3">{hDict.resume_heading}</span>
         </h2>
       </Link>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
+          <Role key={roleIndex} role={role} hDict={hDict} />
         ))}
       </ol>
       <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+        {hDict.resume_button}
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
   )
 }
 
-export default async function Home() {
+export default async function Home({ params }) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  const hDict = dict.home
+  const socialDict = dict.links
+
   let projects = (await getAllProjects())
     .sort((a, b) => b.number - a.number)
     .slice(0, 2)
@@ -237,25 +257,20 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Fernando Bustamante
+            {hDict.bio_name}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm an Integration Engineer at Cellusys, where we build telecom
-            solutions that secure and optimise mobile networks worldwide. I hold
-            a B.Sc. in Computer Science from Dublin City University and am
-            passionate about 5G innovation, signalling intelligence, and
-            cybersecurity, turning complex systems into smarter, safer
-            connectivity.
+            {hDict.bio_text}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://github.com/fernandobusta"
-              aria-label="Follow on GitHub"
+              aria-label={socialDict.github}
               icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/fernandobustamantedelrio-bourman/"
-              aria-label="Follow on LinkedIn"
+              aria-label={socialDict.linkedin}
               icon={LinkedInIcon}
             />
           </div>
@@ -269,7 +284,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
+            <Resume hDict={hDict} />
           </div>
         </div>
       </Container>

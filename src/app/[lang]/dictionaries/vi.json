@@ -18,13 +18,39 @@
     "nav_websites": "Trang Web",
     "copyright_prefix": "Fernando Bustamante. Đã đăng ký bản quyền."
   },
+  "links": {
+    "github": "Theo dõi trên GitHub",
+    "linkedin": "Theo dõi trên LinkedIn"
+  },
+  "home": {
+    "bio_name": "Fernando Bustamante",
+    "bio_text": "Tôi là Kỹ sư Tích hợp tại Cellusys, nơi chúng tôi xây dựng các giải pháp viễn thông nhằm bảo mật và tối ưu hóa mạng di động trên toàn thế giới. Tôi có bằng Cử nhân Khoa học Máy tính tại Đại học Thành phố Dublin và đam mê đổi mới 5G, tín hiệu thông minh và an ninh mạng, biến các hệ thống phức tạp thành kết nối thông minh và an toàn hơn.",
+    "resume_heading": "Công việc",
+    "resume_button": "Tải CV",
+    "role_date_separator": "đến",
+
+    "title_ie": "Kỹ sư Tích hợp",
+    "title_se": "Kỹ sư Phần mềm",
+    "title_se_intern": "Thực tập sinh Kỹ sư Phần mềm",
+    "title_officer": "Cán bộ Tài trợ & Sự kiện",
+    "title_waiter": "Phục vụ Tiệc cưới và Nhà hàng",
+    "title_tutor": "Toán, Ngôn ngữ và Khác",
+    "title_volunteer": "Tình nguyện viên",
+
+    "company_cellusys": "Cellusys",
+    "company_dcu_abc": "Câu Lạc Bộ Quyền Anh DCU",
+    "company_future": "Future Connections",
+    "company_private_events": "Sự kiện Cá nhân",
+    "company_private_tutor": "Gia sư Riêng",
+    "company_oxfam": "Oxfam",
+
+    "date_present": "Hiện tại"
+  },
   "about": {
     "heading": "Tôi là Fernando, Kỹ sư Tích hợp tại Cellusys",
     "p1": "Tôi là Kỹ sư Tích hợp tại **Cellusys**, nơi chúng tôi thiết kế, triển khai và tích hợp các giải pháp phần mềm viễn thông tiên tiến, giúp mạng di động an toàn, hiệu quả và thông minh. Hệ thống của chúng tôi bảo vệ lưu lượng tín hiệu quan trọng và giúp các nhà khai thác có được khả năng hiển thị, kiểm soát và cơ hội kiếm tiền trên toàn mạng lưới của họ.",
     "p2": "Tôi có nền tảng vững chắc về **kỹ thuật phần mềm, mạng và các giao thức viễn thông**, với kinh nghiệm thực tế về công nghệ SS7, Diameter, GTP và 5G. Tôi đặc biệt đam mê **đổi mới 5G, tín hiệu thông minh và an ninh mạng trong viễn thông**—giúp xây dựng các giải pháp tăng cường khả năng phục hồi mạng đồng thời cho phép các nhà khai thác cung cấp kết nối an toàn và thông minh hơn. Bên cạnh kỹ thuật, tôi cũng tập trung vào **khía cạnh con người của kỹ thuật**: cải thiện cách chúng tôi giao tiếp với khách hàng, nuôi dưỡng lòng tin và cung cấp dịch vụ đặc biệt.",
-    "p3": "Tôi bị thúc đẩy bởi các hệ thống phức tạp, sự hợp tác có ý nghĩa và thách thức biến chiều sâu kỹ thuật thành tác động kinh doanh. Mục tiêu của tôi là tiếp tục phát triển với tư cách là một kỹ sư và người giao tiếp, đóng góp vào một hệ sinh thái viễn thông an toàn, thông minh và được kết nối hơn.",
-    "github": "Theo dõi trên GitHub",
-    "linkedin": "Theo dõi trên LinkedIn"
+    "p3": "Tôi bị thúc đẩy bởi các hệ thống phức tạp, sự hợp tác có ý nghĩa và thách thức biến chiều sâu kỹ thuật thành tác động kinh doanh. Mục tiêu của tôi là tiếp tục phát triển với tư cách là một kỹ sư và người giao tiếp, đóng góp vào một hệ sinh thái viễn thông an toàn, thông minh và được kết nối hơn."
   },
   "websites": {
     "web_portfolio": "Danh mục Trang Web",

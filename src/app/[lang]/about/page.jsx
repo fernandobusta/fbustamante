@@ -78,14 +78,14 @@ export default async function Page({ params }) {
               icon={GitHubIcon}
               className="mt-4"
             >
-              {dict.about.github}
+              {dict.links.github}
             </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/in/fernandobustamantedelrio-bourman/"
               icon={LinkedInIcon}
               className="mt-4"
             >
-              {dict.about.linkedin}
+              {dict.links.linkedin}
             </SocialLink>
             <SocialLink
               href="mailto:fbustamantedelriob@gmail.com"
