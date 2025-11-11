@@ -247,7 +247,7 @@ export default async function Websites({ params }) {
     }
   })
   return (
-    <SimpleLayout title="Website Portfolio" marginClass="mt-6 sm:mt-10">
+    <SimpleLayout title={wDict.web_portfolio} marginClass="mt-6 sm:mt-10">
       <div className="pb-6">
         <InfoAlert
           text={wDict.alert_email_text}

@@ -1,4 +1,22 @@
 {
+  "header": {
+    "menu": "Menú",
+    "nav": "Navegación",
+    "nav_home": "Inicio",
+    "nav_about": "Sobre mí",
+    "nav_projects": "Proyectos",
+    "nav_work": "Trabajo",
+    "nav_websites": "Websites",
+    "nav_websites_mobile": "¿Necesita un Sitio Web?"
+  },
+  "footer": {
+    "nav_home": "Inicio",
+    "nav_about": "Acerca de mí",
+    "nav_projects": "Proyectos",
+    "nav_work": "Trabajo",
+    "nav_websites": "Sitios Web",
+    "copyright_prefix": "Fernando Bustamante. Todos los derechos reservados."
+  },
   "about": {
     "heading": "Soy Fernando, Ingeniero de Integraciones en Cellusys",
     "p1": "Soy Ingeniero de Integraciones en **Cellusys**, donde diseñamos, implementamos e integramos soluciones de software de telecomunicaciones avanzadas que mantienen las redes móviles seguras, eficientes e inteligentes. Nuestros sistemas protegen el tráfico de señalización crítico y ayudan a los operadores a obtener visibilidad, control y oportunidades de monetización en sus redes.",
@@ -8,6 +26,7 @@
     "linkedin": "Seguir en LinkedIn"
   },
   "websites": {
+    "web_portfolio": "Portafolio de Sitios Web",
     "intro_p1": "Su sitio web es su activo comercial más crítico. Diseñamos soluciones digitales que van más allá de la apariencia, creando activos confiables y de alto rendimiento que resuelven problemas y convierten visitantes.",
     "quote_heading": "Ingeniería Digital Que Impulsa el Crecimiento Empresarial",
     "section_visible_title": "**Lo Que Ve:** Interfaces Pulidas.",
@@ -111,5 +130,9 @@
     "tutor_text": "Matemáticas, Idiomas, Programación y Diseño",
     "waiter_text": "Catering para Bodas y Restaurantes",
     "volunteer_text": "Oxfam, Bath, Reino Unido"
+  },
+  "projects_page": {
+    "title": "Proyectos",
+    "intro": "Un vistazo a algunos de mis proyectos favoritos: las cosas que he construido durante mi carrera y en mi tiempo libre."
   }
 }

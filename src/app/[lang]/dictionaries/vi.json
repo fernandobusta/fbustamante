@@ -1,4 +1,22 @@
 {
+  "header": {
+    "menu": "Thực đơn",
+    "nav": "Điều hướng",
+    "nav_home": "Trang chủ",
+    "nav_about": "Về tôi",
+    "nav_projects": "Dự án",
+    "nav_work": "Công việc",
+    "nav_websites": "Trang Web",
+    "nav_websites_mobile": "Cần Trang Web?"
+  },
+  "footer": {
+    "nav_home": "Trang chủ",
+    "nav_about": "Về tôi",
+    "nav_projects": "Dự án",
+    "nav_work": "Công việc",
+    "nav_websites": "Trang Web",
+    "copyright_prefix": "Fernando Bustamante. Đã đăng ký bản quyền."
+  },
   "about": {
     "heading": "Tôi là Fernando, Kỹ sư Tích hợp tại Cellusys",
     "p1": "Tôi là Kỹ sư Tích hợp tại **Cellusys**, nơi chúng tôi thiết kế, triển khai và tích hợp các giải pháp phần mềm viễn thông tiên tiến, giúp mạng di động an toàn, hiệu quả và thông minh. Hệ thống của chúng tôi bảo vệ lưu lượng tín hiệu quan trọng và giúp các nhà khai thác có được khả năng hiển thị, kiểm soát và cơ hội kiếm tiền trên toàn mạng lưới của họ.",
@@ -8,6 +26,7 @@
     "linkedin": "Theo dõi trên LinkedIn"
   },
   "websites": {
+    "web_portfolio": "Danh mục Trang Web",
     "intro_p1": "Trang web là tài sản kinh doanh quan trọng nhất của bạn. Chúng tôi thiết kế các giải pháp kỹ thuật số không chỉ đẹp mắt—mà còn tạo ra các tài sản hiệu suất cao, đáng tin cậy, giải quyết vấn đề và chuyển đổi khách truy cập.",
     "quote_heading": "Kỹ Thuật Số Thúc Đẩy Tăng Trưởng Kinh Doanh",
     "section_visible_title": "**Những Gì Bạn Thấy:** Giao Diện Người Dùng Hoàn Thiện.",
@@ -111,5 +130,9 @@
     "tutor_text": "Toán học, Ngôn ngữ, Lập trình và Thiết kế",
     "waiter_text": "Phục vụ Tiệc cưới và Nhà hàng",
     "volunteer_text": "Oxfam, Bath, Vương quốc Anh"
+  },
+  "projects_page": {
+    "title": "Dự Án",
+    "intro": "Xem qua một số dự án yêu thích của tôi — những thứ tôi đã xây dựng trong suốt thời gian học và trong thời gian rảnh rỗi."
   }
 }

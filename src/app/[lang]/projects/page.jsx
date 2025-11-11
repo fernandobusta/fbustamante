@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { getAllProjects } from '@/lib/projects'
+import { getDictionary } from '../dictionaries'
 
 export const metadata = {
   title: 'Projects',
@@ -36,16 +37,19 @@ function Project({ project }) {
   )
 }
 
-export default async function Projects() {
+export default async function Projects({ params }) {
+  const { lang } = await params
+
+  // Fetch the dictionary for the current language
+  const dict = await getDictionary(lang)
+  const pDict = dict.projects_page // Alias for projects dictionary
+
   let projects = await getAllProjects()
 
   projects.sort((a, b) => b.number - a.number)
 
   return (
-    <SimpleLayout
-      title="Projects"
-      intro="A look at some of my favorite projects—the things I've built during my degree and in my own time."
-    >
+    <SimpleLayout title={pDict.title} intro={pDict.intro}>
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"

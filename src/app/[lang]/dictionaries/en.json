@@ -1,4 +1,22 @@
 {
+  "header": {
+    "menu": "Menu",
+    "nav": "Navigation",
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_work": "Work",
+    "nav_websites": "Websites",
+    "nav_websites_mobile": "Need a Website?"
+  },
+  "footer": {
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_work": "Work",
+    "nav_websites": "Websites",
+    "copyright_prefix": "Fernando Bustamante. All rights reserved."
+  },
   "about": {
     "heading": "I'm Fernando, an Integrations Engineer at Cellusys",
     "p1": "I am an Integration Engineer at **Cellusys**, where we design, deploy, and integrate advanced telecom software solutions that keep mobile networks secure, efficient, and intelligent. Our systems protect critical signalling traffic and help operators gain visibility, control, and monetisation opportunities across their networks.",
@@ -8,6 +26,7 @@
     "linkedin": "Follow on LinkedIn"
   },
   "websites": {
+    "web_portfolio": "Website Portfolio",
     "intro_p1": "Your website is your most critical business asset. We engineer digital solutions that go beyond looks—creating high-performing, reliable assets that solve problems and convert visitors.",
     "quote_heading": "Digital Engineering That Drives Business Growth",
     "section_visible_title": "**What You See:** Polished Front-Ends.",
@@ -112,5 +131,9 @@
     "tutor_text": "Maths, Languages, Programming, and Design",
     "waiter_text": "Wedding Catering and Restaurants",
     "volunteer_text": "Oxfam, Bath, UK"
+  },
+  "projects_page": {
+    "title": "Projects",
+    "intro": "A look at some of my favorite projects—the things I've built during my degree and in my own time."
   }
 }

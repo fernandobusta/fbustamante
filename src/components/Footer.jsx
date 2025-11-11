@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import { getDictionary } from '@/app/[lang]/dictionaries'
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
 function NavLink({ href, children }) {
@@ -13,7 +13,9 @@ function NavLink({ href, children }) {
   )
 }
 
-export function Footer() {
+export async function Footer({ lang }) {
+  const dict = await getDictionary(lang)
+  const fDict = dict.footer
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -21,17 +23,16 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/">Home</NavLink>
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/work">Work</NavLink>
-                <NavLink href="/websites">Websites</NavLink>
-                {/* <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink> */}
+                {/* Localized Navigation Links */}
+                <NavLink href="/">{fDict.nav_home}</NavLink>
+                <NavLink href="/about">{fDict.nav_about}</NavLink>
+                <NavLink href="/projects">{fDict.nav_projects}</NavLink>
+                <NavLink href="/work">{fDict.nav_work}</NavLink>
+                <NavLink href="/websites">{fDict.nav_websites}</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Fernando Bustamante. All
-                rights reserved.
+                {/* Localized Copyright */}
+                &copy; {new Date().getFullYear()} {fDict.copyright_prefix}
                 <br />
                 fbustamantedelriob@gmail.com
               </p>
