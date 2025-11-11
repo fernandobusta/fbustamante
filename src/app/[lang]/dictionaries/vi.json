@@ -1,0 +1,166 @@
+{
+  "header": {
+    "menu": "Thực đơn",
+    "nav": "Điều hướng",
+    "nav_home": "Trang chủ",
+    "nav_about": "Về tôi",
+    "nav_projects": "Dự án",
+    "nav_work": "Công việc",
+    "nav_websites": "Trang Web",
+    "nav_websites_mobile": "Cần Trang Web?",
+    "change_lang": "Đổi Ngôn Ngữ"
+  },
+  "footer": {
+    "nav_home": "Trang chủ",
+    "nav_about": "Về tôi",
+    "nav_projects": "Dự án",
+    "nav_work": "Công việc",
+    "nav_websites": "Trang Web",
+    "copyright_prefix": "Fernando Bustamante. Đã đăng ký bản quyền."
+  },
+  "links": {
+    "github": "Theo dõi trên GitHub",
+    "linkedin": "Theo dõi trên LinkedIn"
+  },
+  "home": {
+    "bio_name": "Fernando Bustamante",
+    "bio_text": "Tôi là Kỹ sư Tích hợp tại Cellusys, nơi chúng tôi xây dựng các giải pháp viễn thông nhằm bảo mật và tối ưu hóa mạng di động trên toàn thế giới. Tôi có bằng Cử nhân Khoa học Máy tính tại Đại học Thành phố Dublin và đam mê đổi mới 5G, tín hiệu thông minh và an ninh mạng, biến các hệ thống phức tạp thành kết nối thông minh và an toàn hơn.",
+    "resume_heading": "Công việc",
+    "resume_button": "Tải CV",
+    "role_date_separator": "đến",
+
+    "title_ie": "Kỹ sư Tích hợp",
+    "title_se": "Kỹ sư Phần mềm",
+    "title_se_intern": "Thực tập sinh Kỹ sư Phần mềm",
+    "title_officer": "Cán bộ Tài trợ & Sự kiện",
+    "title_waiter": "Phục vụ Tiệc cưới và Nhà hàng",
+    "title_tutor": "Toán, Ngôn ngữ và Khác",
+    "title_volunteer": "Tình nguyện viên",
+
+    "company_cellusys": "Cellusys",
+    "company_dcu_abc": "Câu Lạc Bộ Quyền Anh DCU",
+    "company_future": "Future Connections",
+    "company_private_events": "Sự kiện Cá nhân",
+    "company_private_tutor": "Gia sư Riêng",
+    "company_oxfam": "Oxfam",
+
+    "date_present": "Hiện tại"
+  },
+  "about": {
+    "heading": "Tôi là Fernando, Kỹ sư Tích hợp tại Cellusys",
+    "p1": "Tôi là Kỹ sư Tích hợp tại **Cellusys**, nơi chúng tôi thiết kế, triển khai và tích hợp các giải pháp phần mềm viễn thông tiên tiến, giúp mạng di động an toàn, hiệu quả và thông minh. Hệ thống của chúng tôi bảo vệ lưu lượng tín hiệu quan trọng và giúp các nhà khai thác có được khả năng hiển thị, kiểm soát và cơ hội kiếm tiền trên toàn mạng lưới của họ.",
+    "p2": "Tôi có nền tảng vững chắc về **kỹ thuật phần mềm, mạng và các giao thức viễn thông**, với kinh nghiệm thực tế về công nghệ SS7, Diameter, GTP và 5G. Tôi đặc biệt đam mê **đổi mới 5G, tín hiệu thông minh và an ninh mạng trong viễn thông**—giúp xây dựng các giải pháp tăng cường khả năng phục hồi mạng đồng thời cho phép các nhà khai thác cung cấp kết nối an toàn và thông minh hơn. Bên cạnh kỹ thuật, tôi cũng tập trung vào **khía cạnh con người của kỹ thuật**: cải thiện cách chúng tôi giao tiếp với khách hàng, nuôi dưỡng lòng tin và cung cấp dịch vụ đặc biệt.",
+    "p3": "Tôi bị thúc đẩy bởi các hệ thống phức tạp, sự hợp tác có ý nghĩa và thách thức biến chiều sâu kỹ thuật thành tác động kinh doanh. Mục tiêu của tôi là tiếp tục phát triển với tư cách là một kỹ sư và người giao tiếp, đóng góp vào một hệ sinh thái viễn thông an toàn, thông minh và được kết nối hơn."
+  },
+  "websites": {
+    "web_portfolio": "Danh mục Trang Web",
+    "intro_p1": "Trang web là tài sản kinh doanh quan trọng nhất của bạn. Chúng tôi thiết kế các giải pháp kỹ thuật số không chỉ đẹp mắt—mà còn tạo ra các tài sản hiệu suất cao, đáng tin cậy, giải quyết vấn đề và chuyển đổi khách truy cập.",
+    "quote_heading": "Kỹ Thuật Số Thúc Đẩy Tăng Trưởng Kinh Doanh",
+    "section_visible_title": "**Những Gì Bạn Thấy:** Giao Diện Người Dùng Hoàn Thiện.",
+    "item_design_strong": "Thiết Kế Ấn Tượng.",
+    "item_design_desc": "Thu hút sự chú ý trong khi phản ánh thương hiệu chuyên nghiệp của bạn.",
+    "item_ux_strong": "Trải Nghiệm Người Dùng Vượt Trội (UX).",
+    "item_ux_desc": "Đảm bảo khách truy cập tìm thấy những gì họ cần ngay lập tức, giảm ma sát.",
+    "item_tech_strong": "Công Nghệ Hiện Đại.",
+    "item_tech_desc": "Mang lại hiệu suất và SEO vượt trội cho mọi trang web (ví dụ: Next.js).",
+    "section_invisible_title": "**Những Gì Bạn Không Thấy:** Lợi Thế Vận Hành.",
+    "section_invisible_p1": "ROI thực sự thường đến từ các hệ thống chạy ẩn sau hậu trường. Mặc dù bí mật, kinh nghiệm này chứng minh chúng tôi xây dựng các giải pháp tùy chỉnh, mạnh mẽ:",
+    "section_invisible_quote": "*Nếu bạn có thể hình dung một quy trình, chúng tôi có thể xây dựng hệ thống cho quy trình đó.*",
+    "item_platforms_strong": "Nền Tảng Tùy Chỉnh.",
+    "item_platforms_desc": "Hệ thống đặt lịch và cổng thông tin khách hàng được thiết kế riêng, điều chỉnh chính xác theo quy trình làm việc của bạn.",
+    "item_data_strong": "Dữ Liệu và Trí Tuệ.",
+    "item_data_desc": "Phát triển các bảng điều khiển KPI và công cụ phân tích biến dữ liệu thành chiến lược rõ ràng, khả thi.",
+    "item_security_strong": "Bảo Mật Đáng Tin Cậy.",
+    "item_security_desc": "Kiến trúc các nền tảng bảo mật cho tất cả dữ liệu vận hành nhạy cảm của bạn.",
+    "outro": "Đừng thích nghi với phần mềm có sẵn. **Hãy cùng xây dựng công nghệ thích ứng hoàn hảo với doanh nghiệp của bạn.**",
+    "alert_email_text": "Gửi email cho tôi tại fbustamantedelriob@gmail.com",
+    "alert_email_action": "Nhấp để Gửi Email!",
+    "alert_linkedin_text": "Gửi email hoặc tin nhắn Linked-in cho tôi nếu bạn muốn hỏi về việc xây dựng trang web của mình!",
+    "alert_linkedin_action": "Hồ Sơ",
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Bảng Điều Khiển Phân Tích Mạng",
+        "description": "Dự án Tường lửa SMS 5G nhằm mục đích tăng cường tính bảo mật và hiệu quả của giao tiếp SMS trong mạng 5G.",
+        "category_title": "Phân Tích Mạng",
+        "author_role": "Phân Tích Mạng"
+      },
+      {
+        "id": 2,
+        "title": "Câu Lạc Bộ Quyền Anh Thể Thao DCU",
+        "description": "Tự hào đại diện cho Đại học Thành phố Dublin và Ireland từ các cuộc thi nghiệp dư đến Thế vận hội Olympic.",
+        "category_title": "Câu Lạc Bộ Quyền Anh",
+        "author_role": "Câu Lạc Bộ Quyền Anh"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Công ty luật tọa lạc tại miền Nam Tây Ban Nha, Málaga, với hơn 50 năm kinh nghiệm.",
+        "category_title": "Công Ty Luật",
+        "author_role": "Công Ty Luật"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle là một hệ thống tổ chức sự kiện và đặt chỗ cho các câu lạc bộ và hội nhóm Đại học.",
+        "category_title": "Sự Kiện",
+        "author_role": "Nền Tảng Đặt Chỗ Sự Kiện"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine chuyên cung cấp các giải pháp Quản lý Tạm thời (Interim Management) cấp cao cho các doanh nghiệp tăng trưởng nhanh, tập trung vào các công ty công nghệ.",
+        "category_title": "Quản Lý Tạm Thời",
+        "author_role": "Quản Lý Tạm Thời"
+      }
+    ]
+  },
+  "work_page": {
+    "title": "Kinh Nghiệm Chuyên Môn và Hợp Tác",
+    "intro": "Tôi có niềm đam mê mạnh mẽ với các hệ thống viễn thông, bảo mật mạng và kỹ thuật phần mềm. Thông qua kinh nghiệm làm việc, tôi đã đạt được sự hiểu biết sâu sắc về cách báo hiệu, kết nối và cơ sở hạ tầng kết hợp với nhau để giữ cho mạng di động an toàn và hiệu quả.",
+    "cellusys": "Cellusys",
+    "cellusys_subtitle": "Dublin, Ireland",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid, Tây Ban Nha",
+    "dcu_abc": "Câu Lạc Bộ Quyền Anh Thể Thao",
+    "dcu_abc_subtitle": "DCU, Dublin",
+    "other_jobs": "Công Việc Khác",
+
+    "integration_engineer": "Kỹ Sư Tích Hợp",
+    "se_cellusys": "Kỹ Sư Phần Mềm",
+    "se_intern": "Thực Tập Sinh Kỹ Sư Phần Mềm",
+    "sponsorship_officer": "Cán Bộ Tài Trợ & Sự Kiện",
+    "private_tutor": "Gia Sư Riêng",
+    "waiter": "Phục Vụ Bàn",
+    "volunteer": "Tình Nguyện Viên",
+
+    "date_ie": "Tháng 8 năm 2025 - Hiện tại",
+    "date_se": "Tháng 3 năm 2024 - Tháng 9 năm 2024 và Tháng 5 năm 2023 - Tháng 8 năm 2023",
+    "date_se_intern": "Tháng 6 năm 2022 - Tháng 9 năm 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Dẫn đầu các hoạt động triển khai và tích hợp tại chỗ cho các giải pháp phần mềm viễn thông (hệ thống SS7, Diameter, GTP và 5G), đảm bảo khả năng tương tác liền mạch trên mạng lưới khách hàng.",
+    "ie_b2": "Đóng vai trò là đầu mối kỹ thuật quan trọng giữa các nhà khai thác và các nhóm kỹ thuật nội bộ, chuyển đổi các yêu cầu phức tạp thành các kết quả rõ ràng, khả thi.",
+
+    "se_b1": "Đã đóng góp vào việc phát triển các sản phẩm chuyển vùng (roaming) quan trọng cho các nhà khai thác viễn thông, bao gồm Steering of Roaming, Roam Welcome và phát hiện Anti-Steering of Roaming.",
+    "se_b2": "Đã hợp tác trong một nhóm phát triển Agile để nâng cao tính năng sản phẩm và cải thiện hiệu suất hệ thống.",
+    "se_b3": "Đã sử dụng một ngăn xếp công nghệ đa dạng, bao gồm Clojure, JavaScript, Java, ElasticSearch, AngularJS và Kibana để xây dựng và tối ưu hóa các giải pháp phần mềm.",
+    "se_b4": "Đã có kinh nghiệm thực tế và sự hiểu biết vững chắc về các giao thức và công nghệ viễn thông, như SS7, Diameter và SIP, cùng với sự tiếp xúc với các tiến bộ LTE/VoLTE và 5G-NR.",
+
+    "se_intern_b1": "Đã phát triển và duy trì các ứng dụng web full stack sử dụng Django, tận dụng các công cụ như Plotly, Dash, SQL và Streamlit để tạo giao diện động và tương tác.",
+    "se_intern_b2": "Đã tự động hóa các quy trình chính bằng UI Vision và Python, sắp xếp hợp lý các quy trình làm việc và tăng hiệu quả hoạt động.",
+    "se_intern_b3": "Đã thực hiện phân tích KPI trên dữ liệu tháp di động cho công ty viễn thông đa quốc gia",
+
+    "officer_text": "Dẫn đầu các sáng kiến tài trợ và quản lý hơn 100 thành viên. Phát triển trang web mới cho câu lạc bộ bằng Next.js, giúp tăng hơn 60 thành viên. Điều phối các sự kiện và đóng góp vào kế hoạch tăng trưởng 3 năm.",
+    "tutor_text": "Toán học, Ngôn ngữ, Lập trình và Thiết kế",
+    "waiter_text": "Phục vụ Tiệc cưới và Nhà hàng",
+    "volunteer_text": "Oxfam, Bath, Vương quốc Anh"
+  },
+  "projects_page": {
+    "title": "Dự Án",
+    "intro": "Xem qua một số dự án yêu thích của tôi — những thứ tôi đã xây dựng trong suốt thời gian học và trong thời gian rảnh rỗi."
+  }
+}

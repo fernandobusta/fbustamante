@@ -13,6 +13,8 @@ import {
 } from '@headlessui/react'
 import clsx from 'clsx'
 
+import LocaleSwitcher from './LocaleSwitcher'
+
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/me.jpeg'
 
@@ -87,11 +89,11 @@ function MobileNavItem({ href, children }) {
   )
 }
 
-function MobileNavigation(props) {
+function MobileNavigation({ className, navLinks }) {
   return (
-    <Popover {...props}>
+    <Popover className={className}>
       <PopoverButton className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
-        Menu
+        {navLinks.menu}
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
       </PopoverButton>
       <PopoverBackdrop
@@ -108,15 +110,19 @@ function MobileNavigation(props) {
             <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
           </PopoverButton>
           <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            Navigation
+            {navLinks.nav}
           </h2>
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
-            <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/work">Work</MobileNavItem>
-            <MobileNavItem href="/websites">Need a Website?</MobileNavItem>
+            <MobileNavItem href="/about">{navLinks.nav_about}</MobileNavItem>
+            <MobileNavItem href="/projects">
+              {navLinks.nav_projects}
+            </MobileNavItem>
+            <MobileNavItem href="/work">{navLinks.nav_work}</MobileNavItem>
+            <MobileNavItem href="/websites">
+              {navLinks.nav_websites_mobile}
+            </MobileNavItem>
 
             {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem>
             <MobileNavItem href="/uses">Uses</MobileNavItem> */}
@@ -128,7 +134,7 @@ function MobileNavigation(props) {
 }
 
 function NavItem({ href, children }) {
-  let isActive = usePathname() === href
+  let isActive = usePathname()?.endsWith(href)
 
   return (
     <li>
@@ -150,14 +156,14 @@ function NavItem({ href, children }) {
   )
 }
 
-function DesktopNavigation(props) {
+function DesktopNavigation({ className, navLinks }) {
   return (
-    <nav {...props}>
-      <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/work">Work</NavItem>
-        <NavItem href="/websites">Websites</NavItem>
+    <nav className={className}>
+      <ul className="flex whitespace-nowrap rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+        <NavItem href="/about">{navLinks.nav_about}</NavItem>
+        <NavItem href="/projects">{navLinks.nav_projects}</NavItem>
+        <NavItem href="/work">{navLinks.nav_work}</NavItem>
+        <NavItem href="/websites">{navLinks.nav_websites}</NavItem>
         {/* <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
       </ul>
@@ -227,7 +233,7 @@ function Avatar({ large = false, className, ...props }) {
   )
 }
 
-export function Header() {
+export function Header({ hDict }) {
   let isHomePage = usePathname() === '/'
 
   let headerRef = useRef(null)
@@ -401,10 +407,20 @@ export function Header() {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
+                <MobileNavigation
+                  className="pointer-events-auto md:hidden"
+                  navLinks={hDict}
+                />
+                <DesktopNavigation
+                  className="pointer-events-auto hidden md:block"
+                  navLinks={hDict}
+                />
               </div>
-              <div className="flex justify-end md:flex-1">
+
+              <div className="flex justify-end gap-4 md:flex-1">
+                <div className="pointer-events-auto">
+                  <LocaleSwitcher text={hDict.change_lang} />
+                </div>
                 <div className="pointer-events-auto">
                   <ThemeToggle />
                 </div>

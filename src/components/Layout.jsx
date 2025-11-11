@@ -1,7 +1,12 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
-export function Layout({ children }) {
+import { getDictionary } from '@/app/[lang]/dictionaries'
+
+export async function Layout({ children, lang }) {
+  // Fetch the dictionary on the server
+  const dict = await getDictionary(lang)
+  const hDict = dict.header
   return (
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">
@@ -10,9 +15,9 @@ export function Layout({ children }) {
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <Header />
+        <Header hDict={hDict} />
         <main className="flex-auto">{children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </div>
     </>
   )

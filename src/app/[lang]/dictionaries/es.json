@@ -1,0 +1,166 @@
+{
+  "header": {
+    "menu": "Menú",
+    "nav": "Navegación",
+    "nav_home": "Inicio",
+    "nav_about": "Sobre mí",
+    "nav_projects": "Proyectos",
+    "nav_work": "Trabajo",
+    "nav_websites": "Websites",
+    "nav_websites_mobile": "¿Necesita un Sitio Web?",
+    "change_lang": "Cambiar Idioma"
+  },
+  "footer": {
+    "nav_home": "Inicio",
+    "nav_about": "Acerca de mí",
+    "nav_projects": "Proyectos",
+    "nav_work": "Trabajo",
+    "nav_websites": "Sitios Web",
+    "copyright_prefix": "Fernando Bustamante. Todos los derechos reservados."
+  },
+  "links": {
+    "github": "Seguir en GitHub",
+    "linkedin": "Seguir en LinkedIn"
+  },
+  "home": {
+    "bio_name": "Fernando Bustamante",
+    "bio_text": "Soy Ingeniero de Integraciones en Cellusys, donde construimos soluciones de telecomunicaciones que aseguran y optimizan las redes móviles en todo el mundo. Soy Licenciado en Ciencias de la Computación por la Universidad de la Ciudad de Dublín y me apasiona la innovación 5G, la inteligencia de señalización y la ciberseguridad, transformando sistemas complejos en conectividad más inteligente y segura.",
+    "resume_heading": "Trabajo",
+    "resume_button": "Descargar CV",
+    "role_date_separator": "hasta",
+
+    "title_ie": "Ingeniero de Integraciones",
+    "title_se": "Ingeniero de Software",
+    "title_se_intern": "Becario de Ingeniería de Software",
+    "title_officer": "Oficial de Patrocinios y Eventos",
+    "title_waiter": "Catering para Bodas y Restaurantes",
+    "title_tutor": "Matemáticas, Idiomas y Otros",
+    "title_volunteer": "Voluntario",
+
+    "company_cellusys": "Cellusys",
+    "company_dcu_abc": "Club de Boxeo DCU",
+    "company_future": "Future Connections",
+    "company_private_events": "Eventos Privados",
+    "company_private_tutor": "Tutor Privado",
+    "company_oxfam": "Oxfam",
+
+    "date_present": "Presente"
+  },
+  "about": {
+    "heading": "Soy Fernando, Ingeniero de Integraciones en Cellusys",
+    "p1": "Soy Ingeniero de Integraciones en **Cellusys**, donde diseñamos, implementamos e integramos soluciones de software de telecomunicaciones avanzadas que mantienen las redes móviles seguras, eficientes e inteligentes. Nuestros sistemas protegen el tráfico de señalización crítico y ayudan a los operadores a obtener visibilidad, control y oportunidades de monetización en sus redes.",
+    "p2": "Tengo una sólida formación en **ingeniería de software, redes y protocolos de telecomunicaciones**, con experiencia práctica en tecnologías SS7, Diameter, GTP y 5G. Me apasionan profundamente la **innovación 5G, la inteligencia de señalización y la ciberseguridad en telecomunicaciones**—ayudando a construir soluciones que fortalecen la resiliencia de la red y permiten a los operadores ofrecer una conectividad más segura e inteligente. Además de lo técnico, también me centro en el **lado humano de la ingeniería**: mejorar la comunicación con los clientes, fomentar la confianza y ofrecer un servicio excepcional.",
+    "p3": "Me impulsan los sistemas complejos, la colaboración significativa y el desafío de convertir la profundidad técnica en impacto empresarial. Mi objetivo es seguir creciendo como ingeniero y comunicador, contribuyendo a un ecosistema de telecomunicaciones más seguro, inteligente y conectado."
+  },
+  "websites": {
+    "web_portfolio": "Portafolio de Sitios Web",
+    "intro_p1": "Su sitio web es su activo comercial más crítico. Diseñamos soluciones digitales que van más allá de la apariencia, creando activos confiables y de alto rendimiento que resuelven problemas y convierten visitantes.",
+    "quote_heading": "Ingeniería Digital Que Impulsa el Crecimiento Empresarial",
+    "section_visible_title": "**Lo Que Ve:** Interfaces Pulidas.",
+    "item_design_strong": "Diseño Impactante.",
+    "item_design_desc": "Capturando la atención mientras refleja su marca profesional.",
+    "item_ux_strong": "UX Superior.",
+    "item_ux_desc": "Asegurando que los visitantes encuentren lo que necesitan al instante, reduciendo la fricción.",
+    "item_tech_strong": "Tecnología Moderna.",
+    "item_tech_desc": "Ofreciendo rendimiento superior y SEO para cada sitio (p. ej., Next.js).",
+    "section_invisible_title": "**Lo Que No Ve:** La Ventaja Operativa.",
+    "section_invisible_p1": "El verdadero Retorno de Inversión (ROI) a menudo proviene de los sistemas que se ejecutan detrás de escena. Aunque es confidencial, esta experiencia demuestra que construimos soluciones personalizadas y potentes:",
+    "section_invisible_quote": "*Si puede imaginar un proceso, podemos construir el sistema para él.*",
+    "item_platforms_strong": "Plataformas Personalizadas.",
+    "item_platforms_desc": "Sistemas de reserva y portales de clientes a medida, adaptados exactamente a su flujo de trabajo.",
+    "item_data_strong": "Datos e Inteligencia.",
+    "item_data_desc": "Desarrollo de cuadros de mando KPI y herramientas de análisis que convierten los datos en estrategias claras y procesables.",
+    "item_security_strong": "Seguridad Confiable.",
+    "item_security_desc": "Diseño de arquitecturas seguras para todos sus datos operativos sensibles.",
+    "outro": "Deje de adaptarse a software estándar. **Construyamos tecnología que se adapte perfectamente a su negocio.**",
+    "alert_email_text": "Envíeme un correo electrónico a fbustamantedelriob@gmail.com",
+    "alert_email_action": "¡Clic para Enviar Email!",
+    "alert_linkedin_text": "¡Envíeme un correo electrónico o un mensaje de Linked-in si desea consultar sobre la creación de su sitio web!",
+    "alert_linkedin_action": "Perfil",
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Panel de Análisis de Red",
+        "description": "El proyecto 5G SMS Firewall tiene como objetivo mejorar la seguridad y eficiencia de las comunicaciones SMS dentro de las redes 5G.",
+        "category_title": "Análisis de Red",
+        "author_role": "Análisis de Red"
+      },
+      {
+        "id": 2,
+        "title": "Club de Boxeo Atlético DCU",
+        "description": "Representando con orgullo a la Universidad de la Ciudad de Dublín e Irlanda, desde competiciones amateur hasta los juegos olímpicos.",
+        "category_title": "Club de Boxeo",
+        "author_role": "Club de Boxeo"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Bufete de abogados ubicado en el sur de España, Málaga, con más de 50 años de experiencia.",
+        "category_title": "Bufete de Abogados",
+        "author_role": "Bufete de Abogados"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle es un organizador de eventos y sistema de reservas para clubes y sociedades universitarias.",
+        "category_title": "Eventos",
+        "author_role": "Plataforma de Reserva de Eventos"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine se especializa en proporcionar soluciones senior de Interim Management para negocios de rápido crecimiento, con enfoque en compañías tecnológicas.",
+        "category_title": "Dirección Interina",
+        "author_role": "Dirección Interina"
+      }
+    ]
+  },
+  "work_page": {
+    "title": "Experiencia Profesional y Colaboraciones",
+    "intro": "Tengo un gran interés en los sistemas de telecomunicaciones, seguridad de redes e ingeniería de software. A través de mi experiencia laboral, he adquirido un profundo conocimiento de cómo la señalización, la conectividad y la infraestructura se unen para mantener las redes móviles seguras y eficientes.",
+    "cellusys": "Cellusys",
+    "cellusys_subtitle": "Dublín, Irlanda",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid, España",
+    "dcu_abc": "Club de Boxeo Atlético",
+    "dcu_abc_subtitle": "DCU, Dublín",
+    "other_jobs": "Otros Trabajos",
+
+    "integration_engineer": "Ingeniero de Integraciones",
+    "se_cellusys": "Ingeniero de Software",
+    "se_intern": "Becario de Ingeniería de Software",
+    "sponsorship_officer": "Oficial de Patrocinios y Eventos",
+    "private_tutor": "Tutor Privado",
+    "waiter": "Camarero",
+    "volunteer": "Voluntario",
+
+    "date_ie": "Agosto 2025 - Presente",
+    "date_se": "Marzo 2024 - Septiembre 2024 y Mayo 2023 - Agosto 2023",
+    "date_se_intern": "Junio 2022 - Septiembre 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Liderar despliegues e integraciones in situ para soluciones de software de telecomunicaciones (sistemas SS7, Diameter, GTP y 5G), asegurando la interoperabilidad perfecta en las redes de los clientes.",
+    "ie_b2": "Actuar como enlace técnico clave entre los operadores y los equipos internos de ingeniería, traduciendo requisitos complejos en entregables claros y procesables.",
+
+    "se_b1": "Contribuí al desarrollo de productos clave de roaming para operadores de telecomunicaciones, incluyendo Steering of Roaming, Roam Welcome y Detección Anti-Steering of Roaming.",
+    "se_b2": "Colaboré dentro de un equipo de desarrollo Agile para mejorar las características del producto y el rendimiento del sistema.",
+    "se_b3": "Utilicé una pila de tecnología diversa, incluyendo Clojure, JavaScript, Java, ElasticSearch, AngularJS y Kibana para construir y optimizar soluciones de software.",
+    "se_b4": "Obtuve experiencia práctica y una sólida comprensión de los protocolos y tecnologías de telecomunicaciones, como SS7, Diameter y SIP, con exposición a los avances de LTE/VoLTE y 5G-NR.",
+
+    "se_intern_b1": "Desarrollé y mantuve aplicaciones web full stack utilizando Django, aprovechando herramientas como Plotly, Dash, SQL y Streamlit para crear interfaces dinámicas e interactivas.",
+    "se_intern_b2": "Automatice procesos clave con UI Vision y Python, agilizando flujos de trabajo y aumentando la eficiencia operativa.",
+    "se_intern_b3": "Realicé análisis de KPI sobre datos de torres de telefonía celular para multinacionales de telecomunicaciones",
+
+    "officer_text": "Lideré iniciativas de patrocinio y gestioné a más de 100 miembros. Desarrollé un nuevo sitio web del club utilizando Next.js, impulsando un aumento de más de 60 miembros. Coordiné eventos y contribuí a un plan de crecimiento de 3 años.",
+    "tutor_text": "Matemáticas, Idiomas, Programación y Diseño",
+    "waiter_text": "Catering para Bodas y Restaurantes",
+    "volunteer_text": "Oxfam, Bath, Reino Unido"
+  },
+  "projects_page": {
+    "title": "Proyectos",
+    "intro": "Un vistazo a algunos de mis proyectos favoritos: las cosas que he construido durante mi carrera y en mi tiempo libre."
+  }
+}

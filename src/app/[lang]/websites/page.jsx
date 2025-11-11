@@ -11,6 +11,9 @@ import {
   AdjustmentsHorizontalIcon,
 } from '@heroicons/react/20/solid'
 
+import { getDictionary } from '../dictionaries'
+import MarkdownRenderer from '@/components/MarkdownRenderer'
+
 // Web images
 import bizimagineImage from '@/images/websites/bizimagine.jpeg'
 import delrioabogados from '@/images/websites/drbabogados.jpeg'
@@ -29,113 +32,92 @@ export const metadata = {
   description: 'Website Portfolio',
 }
 
-const posts = [
+// If anything needs to be translated add on .json translation file and
+// append it in the component below
+const rawPosts = [
   {
     id: 1,
-    title: 'Network Analytics Dashboard',
     href: '#',
-    description:
-      'The 5G SMS Firewall project aims to enhance the security and eﬃciency of SMS communications within 5G networks.',
     imageUrl: firewall,
     date: 'Jan 2025',
     datetime: '2025-01-01',
-    category: { title: 'Network Analytics', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'SMS Firewall',
-      role: 'Network Analytics',
       href: '#',
       imageUrl: firewallLogo,
     },
   },
   {
     id: 2,
-    title: 'DCU Athletic Boxing Club',
     href: '#',
-    description:
-      'Proudly representing Dublin City University and Ireland from Amateur competitions to the Olympic games.',
     imageUrl: dcuboxing,
     date: 'Jan 2023',
     datetime: '2023-01-01',
-    category: { title: 'Boxing Club', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'DCU ABC',
-      role: 'Boxing Club',
       href: '#',
       imageUrl: dcuabcLogo,
     },
   },
   {
     id: 3,
-    title: 'Del Rio Bourman Abogados',
     href: '#',
-    description:
-      'Law Firm located in the south of Spain, Málaga, with over 50 years of experience.',
     imageUrl: delrioabogados,
     date: 'Jan 2022',
     datetime: '2022-01-01',
-    category: { title: 'Law Firm', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'Del Rio Bourman Abogados',
-      role: 'Law Firm',
       href: '#',
       imageUrl: drbLogo,
     },
   },
   {
     id: 4,
-    title: 'Bynle',
     href: '#',
-    description:
-      'Bynle is an event organiser and booking system for Univeristy clubs and societies.',
     imageUrl: bynle,
     date: 'Jan 2024',
     datetime: '2023-01-01',
-    category: { title: 'Events', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'Bynle',
-      role: 'Event Booking Platform',
       href: '#',
       imageUrl: bynleLogo,
     },
   },
   {
     id: 5,
-    title: 'BizImagine',
     href: '#',
-    description:
-      'BIZimagine specialises in providing senior Interim Management solutions for fast growth businesses with a focus on technology companies.',
     imageUrl: bizimagineImage,
     date: 'Feb 2019',
     datetime: '2019-01-01',
-    category: { title: 'Interim Management', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'BizImagine',
-      role: 'Interim Management',
       href: '#',
       imageUrl: bizLogo,
     },
   },
 ]
 
-function WebsitesInfo() {
+async function WebsitesInfo({ lang }) {
+  const dict = await getDictionary(lang)
+  const wDict = dict.websites
   return (
     <div className="pb-6">
-      <p className="pb-4">
-        Your website is your most critical business asset. We engineer digital
-        solutions that go beyond looks—creating high-performing, reliable assets
-        that solve problems and convert visitors.
-      </p>
-
+      <MarkdownRenderer markdownText={wDict.intro_p1} className="pb-4" />
       <figure className="border-l border-indigo-600 pl-8 dark:border-indigo-400">
         <blockquote className="text-xl/8 font-semibold tracking-tight text-gray-900 dark:text-white">
-          <p>Digital Engineering That Drives Business Growth</p>
+          <p>{wDict.quote_heading}</p>
         </blockquote>
       </figure>
-
       <div className="">
-        <p className="pb-4 pt-6">
-          <strong>What You See:</strong> Polished Front-Ends.
-        </p>
+        <MarkdownRenderer
+          markdownText={wDict.section_visible_title}
+          className="pb-4 pt-6"
+        />
 
         <ul
           role="list"
@@ -148,9 +130,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Impactful Design.
+                {wDict.item_design_strong}
               </strong>{' '}
-              Capturing attention while reflecting your professional brand.
+              {wDict.item_design_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -160,10 +142,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Superior UX.
+                {wDict.item_ux_strong}
               </strong>{' '}
-              Ensuring visitors find what they need instantly, reducing
-              friction.
+              {wDict.item_ux_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -173,28 +154,20 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Modern Tech.
+                {wDict.item_tech_strong}
               </strong>{' '}
-              Delivering superior performance and SEO for every site (e.g.,
-              Next.js).
+              {wDict.item_tech_desc}
             </span>
           </li>
         </ul>
         <div className="pb-4 pt-6">
-          <p className="pb-2">
-            <strong>What You Don't See:</strong> The Operational Advantage.
-          </p>
-          <p>
-            The true ROI often comes from the systems running behind the scenes.
-            While confidential, this experience proves we build powerful, custom
-            solutions: <br />
-            <i>
-              <strong>
-                {' '}
-                If you can imagine a process, we can build the system for it.
-              </strong>
-            </i>
-          </p>
+          <MarkdownRenderer
+            markdownText={wDict.section_invisible_title}
+            className="pb-2"
+          />
+          <MarkdownRenderer
+            markdownText={`${wDict.section_invisible_p1} \n\n${wDict.section_invisible_quote}`}
+          />
         </div>
         <ul
           role="list"
@@ -207,10 +180,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Custom Platforms.
+                {wDict.item_platforms_strong}
               </strong>{' '}
-              Bespoke booking systems and client portals tailored exactly to
-              your workflow.
+              {wDict.item_platforms_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -220,10 +192,9 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Data & Intelligence.
+                {wDict.item_data_strong}
               </strong>{' '}
-              Developing KPI dashboards and analytics tools that turn data into
-              clear, actionable strategy.
+              {wDict.item_data_desc}
             </span>
           </li>
           <li className="flex gap-x-3">
@@ -233,39 +204,61 @@ function WebsitesInfo() {
             />
             <span>
               <strong className="font-semibold text-gray-900 dark:text-white">
-                Reliable Security.
+                {wDict.item_security_strong}
               </strong>{' '}
-              Architecting secure foundations for all your sensitive operational
-              data.
+              {wDict.item_security_desc}
             </span>
           </li>
         </ul>
 
-        <p className="pt-4">
-          Stop adapting to off-the-shelf software.{' '}
-          <strong>
-            Let's build technology that adapts perfectly to your business.
-          </strong>
-        </p>
+        <MarkdownRenderer markdownText={wDict.outro} className="pt-4" />
       </div>
     </div>
   )
 }
 
-export default function Websites() {
+export default async function Websites({ params }) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  const wDict = dict.websites
+  const blogDict = wDict.website_portfolio
+
+  // Merge static data with translated data
+  const posts = rawPosts.map((post) => {
+    // Find the corresponding translation using the post ID
+    const translation = blogDict.find((t) => t.id === post.id)
+
+    if (!translation) {
+      console.warn(`Translation missing for post ID: ${post.id}`)
+      return post // Return untranslated post if missing
+    }
+
+    return {
+      ...post,
+      title: translation.title,
+      description: translation.description,
+      category: {
+        title: translation.category_title,
+      },
+      author: {
+        ...post.author,
+        role: translation.author_role,
+      },
+    }
+  })
   return (
-    <SimpleLayout title="Website Portfolio" marginClass="mt-6 sm:mt-10">
+    <SimpleLayout title={wDict.web_portfolio} marginClass="mt-6 sm:mt-10">
       <div className="pb-6">
         <InfoAlert
-          text="Send me an email at fbustamantedelriob@gmail.com"
-          action="Click to Email!"
+          text={wDict.alert_email_text}
+          action={wDict.alert_email_action}
           link="mailto:fbustamantedelriob@gmail.com?subject=Website%20Portfolio%20Inquiry"
         />
       </div>
-      <WebsitesInfo />
+      <WebsitesInfo lang={lang} />
       <InfoAlert
-        text="Send me an email or Linked-in message if you want to inquire about building your website!"
-        action="Profile"
+        text={wDict.alert_linkedin_text}
+        action={wDict.alert_linkedin_action}
         link="https://www.linkedin.com/in/fernandobustamantedelrio-bourman/"
       />
 

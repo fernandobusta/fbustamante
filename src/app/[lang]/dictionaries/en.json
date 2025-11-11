@@ -1,0 +1,167 @@
+{
+  "header": {
+    "menu": "Menu",
+    "nav": "Navigation",
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_work": "Work",
+    "nav_websites": "Websites",
+    "nav_websites_mobile": "Need a Website?",
+    "change_lang": "Change Language"
+  },
+  "footer": {
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_work": "Work",
+    "nav_websites": "Websites",
+    "copyright_prefix": "Fernando Bustamante. All rights reserved."
+  },
+  "links": {
+    "github": "Follow on GitHub",
+    "linkedin": "Follow on LinkedIn"
+  },
+  "home": {
+    "bio_name": "Fernando Bustamante",
+    "bio_text": "I'm an Integration Engineer at Cellusys, where we build telecom solutions that secure and optimise mobile networks worldwide. I hold a B.Sc. in Computer Science from Dublin City University and am passionate about 5G innovation, signalling intelligence, and cybersecurity, turning complex systems into smarter, safer connectivity.",
+    "resume_heading": "Work",
+    "resume_button": "Download CV",
+    "role_date_separator": "until",
+
+    "title_ie": "Integration Engineer",
+    "title_se": "Software Engineer",
+    "title_se_intern": "Software Engineer Intern",
+    "title_officer": "Sponsorship & Events Officer",
+    "title_waiter": "Wedding Catering and Restaurants",
+    "title_tutor": "Maths, Languages and Others",
+    "title_volunteer": "Volunteer",
+
+    "company_cellusys": "Cellusys",
+    "company_dcu_abc": "DCU Boxing Club",
+    "company_future": "Future Connections",
+    "company_private_events": "Private Events",
+    "company_private_tutor": "Private Tutor",
+    "company_oxfam": "Oxfam",
+
+    "date_present": "Present"
+  },
+  "about": {
+    "heading": "I'm Fernando, an Integrations Engineer at Cellusys",
+    "p1": "I am an Integration Engineer at **Cellusys**, where we design, deploy, and integrate advanced telecom software solutions that keep mobile networks secure, efficient, and intelligent. Our systems protect critical signalling traffic and help operators gain visibility, control, and monetisation opportunities across their networks.",
+    "p2": "I have a strong background in **software engineering, networking, and telecom protocols**, with hands-on expertise across SS7, Diameter, GTP, and 5G technologies. I’m deeply passionate about **5G innovation, signalling intelligence, and cybersecurity in telecom**—helping build solutions that strengthen network resilience while enabling operators to deliver safer and smarter connectivity. Alongside the technical, I also focus on the **human side of engineering**: improving how we communicate with customers, foster trust, and deliver exceptional service.",
+    "p3": "I’m driven by complex systems, meaningful collaboration, and the challenge of turning technical depth into business impact. My goal is to continue growing as an engineer and communicator, contributing to a more secure, intelligent, and connected telecom ecosystem."
+  },
+  "websites": {
+    "web_portfolio": "Website Portfolio",
+    "intro_p1": "Your website is your most critical business asset. We engineer digital solutions that go beyond looks—creating high-performing, reliable assets that solve problems and convert visitors.",
+    "quote_heading": "Digital Engineering That Drives Business Growth",
+    "section_visible_title": "**What You See:** Polished Front-Ends.",
+    "item_design_strong": "Impactful Design.",
+    "item_design_desc": "Capturing attention while reflecting your professional brand.",
+    "item_ux_strong": "Superior UX.",
+    "item_ux_desc": "Ensuring visitors find what they need instantly, reducing friction.",
+    "item_tech_strong": "Modern Tech.",
+    "item_tech_desc": "Delivering superior performance and SEO for every site (e.g., Next.js).",
+    "section_invisible_title": "**What You Don't See:** The Operational Advantage.",
+    "section_invisible_p1": "The true ROI often comes from the systems running behind the scenes. While confidential, this experience proves we build powerful, custom solutions:",
+    "section_invisible_quote": "*If you can imagine a process, we can build the system for it.*",
+    "item_platforms_strong": "Custom Platforms.",
+    "item_platforms_desc": "Bespoke booking systems and client portals tailored exactly to your workflow.",
+    "item_data_strong": "Data & Intelligence.",
+    "item_data_desc": "Developing KPI dashboards and analytics tools that turn data into clear, actionable strategy.",
+    "item_security_strong": "Reliable Security.",
+    "item_security_desc": "Architecting secure foundations for all your sensitive operational data.",
+    "outro": "Stop adapting to off-the-shelf software. **Let's build technology that adapts perfectly to your business.**",
+    "alert_email_text": "Send me an email at fbustamantedelriob@gmail.com",
+    "alert_email_action": "Click to Email!",
+    "alert_linkedin_text": "Send me an email or Linked-in message if you want to inquire about building your website!",
+    "alert_linkedin_action": "Profile",
+
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Network Analytics Dashboard",
+        "description": "The 5G SMS Firewall project aims to enhance the security and efficiency of SMS communications within 5G networks.",
+        "category_title": "Network Analytics",
+        "author_role": "Network Analytics"
+      },
+      {
+        "id": 2,
+        "title": "DCU Athletic Boxing Club",
+        "description": "Proudly representing Dublin City University and Ireland from Amateur competitions to the Olympic games.",
+        "category_title": "Boxing Club",
+        "author_role": "Boxing Club"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Law Firm located in the south of Spain, Málaga, with over 50 years of experience.",
+        "category_title": "Law Firm",
+        "author_role": "Law Firm"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle is an event organiser and booking system for University clubs and societies.",
+        "category_title": "Events",
+        "author_role": "Event Booking Platform"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine specialises in providing senior Interim Management solutions for fast growth businesses with a focus on technology companies.",
+        "category_title": "Interim Management",
+        "author_role": "Interim Management"
+      }
+    ]
+  },
+  "work_page": {
+    "title": "Professional Experience & Collaborations",
+    "intro": "I have a strong interest in telecom systems, network security, and software engineering. Through my work experience, I’ve gained a deep understanding of how signalling, connectivity, and infrastructure come together to keep mobile networks secure and efficient.",
+    "cellusys": "Cellusys",
+    "cellusys_subtitle": "Dublin, Ireland",
+    "future_connections": "Future Connections",
+    "future_connections_subtitle": "Madrid, Spain",
+    "dcu_abc": "Athletic Boxing Club",
+    "dcu_abc_subtitle": "DCU, Dublin",
+    "other_jobs": "Other Jobs",
+
+    "integration_engineer": "Integration Engineer",
+    "se_cellusys": "Software Engineer",
+    "se_intern": "Software Engineer Intern",
+    "sponsorship_officer": "Sponsorship & Events Officer",
+    "private_tutor": "Private Tutor",
+    "waiter": "Waiter",
+    "volunteer": "Volunteer",
+
+    "date_ie": "August 2025 - Present",
+    "date_se": "March 2024 - September 2024 and May 2023 - August 2023",
+    "date_se_intern": "June 2022 - September 2022",
+    "date_officer": "2023 - 2024",
+    "date_tutor": "2019 - 2025",
+    "date_waiter": "2018 - 2021",
+    "date_volunteer": "2016 - 2017",
+
+    "ie_b1": "Leading onsite deployments and integrations for telecom software solutions (SS7, Diameter, GTP, and 5G systems), ensuring seamless interoperability across client networks.",
+    "ie_b2": "Acting as a key technical liaison between operators and internal engineering teams, translating complex requirements into clear, actionable deliverables.",
+
+    "se_b1": "Contributed to the development of key roaming products for telecom operators, including Steering of Roaming, Roam Welcome and Anti-Steering of Roaming Detection.",
+    "se_b2": "Collaborated within an Agile development team to enhance product features and improve system performance.",
+    "se_b3": "Utilised a diverse tech stack, including Clojure, JavaScript, Java, ElasticSearch, AngularJS, and Kibana to build and optimise software solutions.",
+    "se_b4": "Gained hands-on experience and a solid understanding of telecom protocols and technologies, such as SS7, Diameter and SIP, with exposure to LTE/VoLTE and 5G-NR advancements.",
+
+    "se_intern_b1": "Developed and maintained full stack web applications using Django, leveraging tools like Plotly, Dash, SQL, and Streamlit to create dynamic and interactive interfaces.",
+    "se_intern_b2": "Automated key processes with UI Vision and Python, streamlining workflows and increasing operational efficiency.",
+    "se_intern_b3": "Performed KPI analysis on cell tower data for multinational telec",
+
+    "officer_text": "Led sponsorship initiatives and managed over 100 members. Developed a new club website using Next.js driving over 60-member increase. Coordinated events and contributed to a 3-year growth plan.",
+    "tutor_text": "Maths, Languages, Programming, and Design",
+    "waiter_text": "Wedding Catering and Restaurants",
+    "volunteer_text": "Oxfam, Bath, UK"
+  },
+  "projects_page": {
+    "title": "Projects",
+    "intro": "A look at some of my favorite projects—the things I've built during my degree and in my own time."
+  }
+}

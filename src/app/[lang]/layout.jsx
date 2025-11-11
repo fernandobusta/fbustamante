@@ -1,5 +1,6 @@
-import { Providers } from '@/app/providers'
+import { Providers } from '@/app/[lang]/providers'
 import { Layout } from '@/components/Layout'
+import { getDictionary } from './dictionaries'
 
 import '@/styles/tailwind.css'
 
@@ -17,13 +18,14 @@ export const metadata = {
   },
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const { lang } = await params
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html lang={lang} className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
-            <Layout>{children}</Layout>
+            <Layout lang={lang}>{children}</Layout>
           </div>
         </Providers>
       </body>
