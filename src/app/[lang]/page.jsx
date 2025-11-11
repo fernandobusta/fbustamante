@@ -14,7 +14,7 @@ import logoOxfam from '@/images/logos/oxfam-logo.png'
 import tutor from '@/images/logos/tutor.png'
 import waiter from '@/images/logos/waiter.png'
 
-import { getAllProjects } from '@/app/[lang]/projects'
+import { getAllProjects } from '@/lib/projects'
 
 function MailIcon(props) {
   return (
