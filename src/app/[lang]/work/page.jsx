@@ -40,7 +40,7 @@ export default async function Work({ params }) {
     <SimpleLayout title={wDict.title} intro={wDict.intro}>
       <div className="space-y-20">
         {/* Cellusys - Integration Engineer */}
-        <ToolsSection title={wDict.cellusys_dublin}>
+        <ToolsSection title={wDict.cellusys} subtitle={wDict.cellusys_subtitle}>
           <Tool title={wDict.integration_engineer}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
               {wDict.date_ie}
@@ -50,7 +50,7 @@ export default async function Work({ params }) {
           </Tool>
         </ToolsSection>
         {/* Cellusys - Software Engineer */}
-        <ToolsSection title={wDict.cellusys_dublin}>
+        <ToolsSection title={wDict.cellusys} subtitle={wDict.cellusys_subtitle}>
           <Tool title={wDict.se_cellusys}>
             <Subheading className="text-zinc-600 dark:text-zinc-400">
               {wDict.date_se}

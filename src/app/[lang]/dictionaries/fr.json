@@ -118,9 +118,10 @@
   "work_page": {
     "title": "Expérience Professionnelle et Collaborations",
     "intro": "J'ai un fort intérêt pour les systèmes de télécommunication, la sécurité réseau et l'ingénierie logicielle. Grâce à mon expérience professionnelle, j'ai acquis une compréhension approfondie de la façon dont la signalisation, la connectivité et l'infrastructure se rejoignent pour maintenir les réseaux mobiles sécurisés et efficaces.",
-    "cellusys_dublin": "Cellusys, Dublin",
+    "cellusys": "Cellusys",
+    "cellusys_subtitle": "Dublin, Irlande",
     "future_connections": "Future Connections",
-    "future_connections_subtitle": "Madrid",
+    "future_connections_subtitle": "Madrid, Espagne",
     "dcu_abc": "Club de Boxe Athlétique",
     "dcu_abc_subtitle": "DCU, Dublin",
     "other_jobs": "Autres Emplois",

@@ -119,9 +119,10 @@
   "work_page": {
     "title": "Professional Experience & Collaborations",
     "intro": "I have a strong interest in telecom systems, network security, and software engineering. Through my work experience, I’ve gained a deep understanding of how signalling, connectivity, and infrastructure come together to keep mobile networks secure and efficient.",
-    "cellusys_dublin": "Cellusys, Dublin",
+    "cellusys": "Cellusys",
+    "cellusys_subtitle": "Dublin, Ireland",
     "future_connections": "Future Connections",
-    "future_connections_subtitle": "Madrid",
+    "future_connections_subtitle": "Madrid, Spain",
     "dcu_abc": "Athletic Boxing Club",
     "dcu_abc_subtitle": "DCU, Dublin",
     "other_jobs": "Other Jobs",
