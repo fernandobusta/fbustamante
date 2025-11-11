@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file
 This version aims to update content, upgrade to next js latest version (v 16.0.1) as for now, and add internationalization.
 
 ### Added
+- [25-10-10] added button to change languages
 - [25-10-10] added internationalization using app router and simple proxy
 
 ### Changed
