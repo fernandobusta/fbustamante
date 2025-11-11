@@ -32,88 +32,70 @@ export const metadata = {
   description: 'Website Portfolio',
 }
 
-const posts = [
+// If anything needs to be translated add on .json translation file and
+// append it in the component below
+const rawPosts = [
   {
     id: 1,
-    title: 'Network Analytics Dashboard',
     href: '#',
-    description:
-      'The 5G SMS Firewall project aims to enhance the security and eﬃciency of SMS communications within 5G networks.',
     imageUrl: firewall,
     date: 'Jan 2025',
     datetime: '2025-01-01',
-    category: { title: 'Network Analytics', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'SMS Firewall',
-      role: 'Network Analytics',
       href: '#',
       imageUrl: firewallLogo,
     },
   },
   {
     id: 2,
-    title: 'DCU Athletic Boxing Club',
     href: '#',
-    description:
-      'Proudly representing Dublin City University and Ireland from Amateur competitions to the Olympic games.',
     imageUrl: dcuboxing,
     date: 'Jan 2023',
     datetime: '2023-01-01',
-    category: { title: 'Boxing Club', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'DCU ABC',
-      role: 'Boxing Club',
       href: '#',
       imageUrl: dcuabcLogo,
     },
   },
   {
     id: 3,
-    title: 'Del Rio Bourman Abogados',
     href: '#',
-    description:
-      'Law Firm located in the south of Spain, Málaga, with over 50 years of experience.',
     imageUrl: delrioabogados,
     date: 'Jan 2022',
     datetime: '2022-01-01',
-    category: { title: 'Law Firm', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'Del Rio Bourman Abogados',
-      role: 'Law Firm',
       href: '#',
       imageUrl: drbLogo,
     },
   },
   {
     id: 4,
-    title: 'Bynle',
     href: '#',
-    description:
-      'Bynle is an event organiser and booking system for Univeristy clubs and societies.',
     imageUrl: bynle,
     date: 'Jan 2024',
     datetime: '2023-01-01',
-    category: { title: 'Events', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'Bynle',
-      role: 'Event Booking Platform',
       href: '#',
       imageUrl: bynleLogo,
     },
   },
   {
     id: 5,
-    title: 'BizImagine',
     href: '#',
-    description:
-      'BIZimagine specialises in providing senior Interim Management solutions for fast growth businesses with a focus on technology companies.',
     imageUrl: bizimagineImage,
     date: 'Feb 2019',
     datetime: '2019-01-01',
-    category: { title: 'Interim Management', href: '#' },
+    category: { href: '#' },
     author: {
       name: 'BizImagine',
-      role: 'Interim Management',
       href: '#',
       imageUrl: bizLogo,
     },
@@ -239,6 +221,31 @@ export default async function Websites({ params }) {
   const { lang } = await params
   const dict = await getDictionary(lang)
   const wDict = dict.websites
+  const blogDict = wDict.website_portfolio
+
+  // Merge static data with translated data
+  const posts = rawPosts.map((post) => {
+    // Find the corresponding translation using the post ID
+    const translation = blogDict.find((t) => t.id === post.id)
+
+    if (!translation) {
+      console.warn(`Translation missing for post ID: ${post.id}`)
+      return post // Return untranslated post if missing
+    }
+
+    return {
+      ...post,
+      title: translation.title,
+      description: translation.description,
+      category: {
+        title: translation.category_title,
+      },
+      author: {
+        ...post.author,
+        role: translation.author_role,
+      },
+    }
+  })
   return (
     <SimpleLayout title="Website Portfolio" marginClass="mt-6 sm:mt-10">
       <div className="pb-6">

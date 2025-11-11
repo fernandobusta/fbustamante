@@ -30,6 +30,43 @@
     "alert_email_text": "Envoyez-moi un e-mail à fbustamantedelriob@gmail.com",
     "alert_email_action": "Cliquez pour Envoyer un Email !",
     "alert_linkedin_text": "Envoyez-moi un e-mail ou un message Linked-in si vous souhaitez vous renseigner sur la création de votre site web !",
-    "alert_linkedin_action": "Profil"
+    "alert_linkedin_action": "Profil",
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Tableau de Bord d'Analyse Réseau",
+        "description": "Le projet 5G SMS Firewall vise à améliorer la sécurité et l'efficacité des communications SMS au sein des réseaux 5G.",
+        "category_title": "Analyse Réseau",
+        "author_role": "Analyse Réseau"
+      },
+      {
+        "id": 2,
+        "title": "Club de Boxe Athlétique DCU",
+        "description": "Représentant fièrement l'Université de Dublin City et l'Irlande, des compétitions amateurs aux Jeux Olympiques.",
+        "category_title": "Club de Boxe",
+        "author_role": "Club de Boxe"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Cabinet d'avocats situé dans le sud de l'Espagne, à Malaga, avec plus de 50 ans d'expérience.",
+        "category_title": "Cabinet d'Avocats",
+        "author_role": "Cabinet d'Avocats"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle est un organisateur d'événements et un système de réservation pour les clubs et sociétés universitaires.",
+        "category_title": "Événements",
+        "author_role": "Plateforme de Réservation d'Événements"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine est spécialisé dans la fourniture de solutions de gestion de transition (Interim Management) senior pour les entreprises à croissance rapide, en se concentrant sur les entreprises technologiques.",
+        "category_title": "Gestion de Transition",
+        "author_role": "Gestion de Transition"
+      }
+    ]
   }
 }

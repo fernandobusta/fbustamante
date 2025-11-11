@@ -30,6 +30,44 @@
     "alert_email_text": "Send me an email at fbustamantedelriob@gmail.com",
     "alert_email_action": "Click to Email!",
     "alert_linkedin_text": "Send me an email or Linked-in message if you want to inquire about building your website!",
-    "alert_linkedin_action": "Profile"
+    "alert_linkedin_action": "Profile",
+
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Network Analytics Dashboard",
+        "description": "The 5G SMS Firewall project aims to enhance the security and efficiency of SMS communications within 5G networks.",
+        "category_title": "Network Analytics",
+        "author_role": "Network Analytics"
+      },
+      {
+        "id": 2,
+        "title": "DCU Athletic Boxing Club",
+        "description": "Proudly representing Dublin City University and Ireland from Amateur competitions to the Olympic games.",
+        "category_title": "Boxing Club",
+        "author_role": "Boxing Club"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Law Firm located in the south of Spain, Málaga, with over 50 years of experience.",
+        "category_title": "Law Firm",
+        "author_role": "Law Firm"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle is an event organiser and booking system for University clubs and societies.",
+        "category_title": "Events",
+        "author_role": "Event Booking Platform"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine specialises in providing senior Interim Management solutions for fast growth businesses with a focus on technology companies.",
+        "category_title": "Interim Management",
+        "author_role": "Interim Management"
+      }
+    ]
   }
 }

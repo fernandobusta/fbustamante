@@ -30,6 +30,43 @@
     "alert_email_text": "Envíeme un correo electrónico a fbustamantedelriob@gmail.com",
     "alert_email_action": "¡Clic para Enviar Email!",
     "alert_linkedin_text": "¡Envíeme un correo electrónico o un mensaje de Linked-in si desea consultar sobre la creación de su sitio web!",
-    "alert_linkedin_action": "Perfil"
+    "alert_linkedin_action": "Perfil",
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Panel de Análisis de Red",
+        "description": "El proyecto 5G SMS Firewall tiene como objetivo mejorar la seguridad y eficiencia de las comunicaciones SMS dentro de las redes 5G.",
+        "category_title": "Análisis de Red",
+        "author_role": "Análisis de Red"
+      },
+      {
+        "id": 2,
+        "title": "Club de Boxeo Atlético DCU",
+        "description": "Representando con orgullo a la Universidad de la Ciudad de Dublín e Irlanda, desde competiciones amateur hasta los juegos olímpicos.",
+        "category_title": "Club de Boxeo",
+        "author_role": "Club de Boxeo"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Bufete de abogados ubicado en el sur de España, Málaga, con más de 50 años de experiencia.",
+        "category_title": "Bufete de Abogados",
+        "author_role": "Bufete de Abogados"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle es un organizador de eventos y sistema de reservas para clubes y sociedades universitarias.",
+        "category_title": "Eventos",
+        "author_role": "Plataforma de Reserva de Eventos"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine se especializa en proporcionar soluciones senior de Interim Management para negocios de rápido crecimiento, con enfoque en compañías tecnológicas.",
+        "category_title": "Dirección Interina",
+        "author_role": "Dirección Interina"
+      }
+    ]
   }
 }

@@ -30,6 +30,43 @@
     "alert_email_text": "Gửi email cho tôi tại fbustamantedelriob@gmail.com",
     "alert_email_action": "Nhấp để Gửi Email!",
     "alert_linkedin_text": "Gửi email hoặc tin nhắn Linked-in cho tôi nếu bạn muốn hỏi về việc xây dựng trang web của mình!",
-    "alert_linkedin_action": "Hồ Sơ"
+    "alert_linkedin_action": "Hồ Sơ",
+    "website_portfolio": [
+      {
+        "id": 1,
+        "title": "Bảng Điều Khiển Phân Tích Mạng",
+        "description": "Dự án Tường lửa SMS 5G nhằm mục đích tăng cường tính bảo mật và hiệu quả của giao tiếp SMS trong mạng 5G.",
+        "category_title": "Phân Tích Mạng",
+        "author_role": "Phân Tích Mạng"
+      },
+      {
+        "id": 2,
+        "title": "Câu Lạc Bộ Quyền Anh Thể Thao DCU",
+        "description": "Tự hào đại diện cho Đại học Thành phố Dublin và Ireland từ các cuộc thi nghiệp dư đến Thế vận hội Olympic.",
+        "category_title": "Câu Lạc Bộ Quyền Anh",
+        "author_role": "Câu Lạc Bộ Quyền Anh"
+      },
+      {
+        "id": 3,
+        "title": "Del Rio Bourman Abogados",
+        "description": "Công ty luật tọa lạc tại miền Nam Tây Ban Nha, Málaga, với hơn 50 năm kinh nghiệm.",
+        "category_title": "Công Ty Luật",
+        "author_role": "Công Ty Luật"
+      },
+      {
+        "id": 4,
+        "title": "Bynle",
+        "description": "Bynle là một hệ thống tổ chức sự kiện và đặt chỗ cho các câu lạc bộ và hội nhóm Đại học.",
+        "category_title": "Sự Kiện",
+        "author_role": "Nền Tảng Đặt Chỗ Sự Kiện"
+      },
+      {
+        "id": 5,
+        "title": "BizImagine",
+        "description": "BIZimagine chuyên cung cấp các giải pháp Quản lý Tạm thời (Interim Management) cấp cao cho các doanh nghiệp tăng trưởng nhanh, tập trung vào các công ty công nghệ.",
+        "category_title": "Quản Lý Tạm Thời",
+        "author_role": "Quản Lý Tạm Thời"
+      }
+    ]
   }
 }
