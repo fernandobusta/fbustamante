@@ -1,7 +1,7 @@
 import glob from 'fast-glob'
 
 async function importProject(projectFilename) {
-  let { project } = await import(`../app/[lang]/projects/${projectFilename}`)
+  let { project } = await import(`./projects/${projectFilename}`)
 
   return {
     slug: projectFilename.replace(/(\/page)?\.mdx$/, ''),
