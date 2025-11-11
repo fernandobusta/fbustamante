@@ -18,10 +18,11 @@ export default function Blog({ posts }) {
 
               <div className="sm:aspect-2/1 lg:aspect-3/2 relative aspect-video w-full rounded-2xl bg-gray-100 dark:bg-gray-800">
                 <Image
-                  alt={post.title} // Add a meaningful alt text
+                  alt={post.title}
                   src={post.imageUrl}
-                  fill // Fills the parent div
-                  className="rounded-2xl object-cover" // Classes moved here
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="rounded-2xl object-cover"
                 />
               </div>
 
