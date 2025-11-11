@@ -38,7 +38,7 @@ const localeDict = {
 }
 const COOKIE_NAME = 'NEXT_LOCALE'
 
-export default function LocaleSwitcher(props) {
+export default function LocaleSwitcher({ className, text }) {
   const pathname = usePathname()
 
   // Function to determine the target path for a new locale
@@ -69,7 +69,7 @@ export default function LocaleSwitcher(props) {
   }
 
   return (
-    <Popover {...props}>
+    <Popover className={className}>
       <PopoverButton className="group flex items-center rounded-full bg-white/90 px-2 py-2 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
         <LanguageIcon className="h-auto w-6 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
       </PopoverButton>
@@ -87,7 +87,7 @@ export default function LocaleSwitcher(props) {
             <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
           </PopoverButton>
           <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            Change Language
+            {text}
           </h2>
         </div>
         <nav className="mt-6">

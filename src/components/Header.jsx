@@ -419,7 +419,7 @@ export function Header({ hDict }) {
 
               <div className="flex justify-end gap-4 md:flex-1">
                 <div className="pointer-events-auto">
-                  <LocaleSwitcher />
+                  <LocaleSwitcher text={hDict.change_lang} />
                 </div>
                 <div className="pointer-events-auto">
                   <ThemeToggle />
