@@ -14,6 +14,8 @@ This version aims to update content, upgrade to next js latest version (v 16.0.1
 - Content and UI change to match current career stage
 
 ### Fixed
+- Updated cookie to remember language preference
+- Fixed issue with projects not loading due to change in project structure with [lang]
 
 
 ## [1.0.0] - 2024

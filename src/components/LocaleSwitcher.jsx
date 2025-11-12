@@ -65,7 +65,11 @@ export default function LocaleSwitcher({ className, text }) {
   // New function to handle the language switch and cookie setting
   const handleSwitch = (locale) => {
     // Set the cookie so the middleware picks it up on the next request
-    Cookies.set(COOKIE_NAME, locale, { expires: 365, path: '/' })
+    Cookies.set(COOKIE_NAME, locale, {
+      expires: 365,
+      path: '/',
+      sameSite: 'lax',
+    })
   }
 
   return (

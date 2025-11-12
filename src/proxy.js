@@ -41,7 +41,12 @@ export function proxy(request) {
     // If the URL locale is different from the cookie, update the cookie.
     if (urlLocale !== cookieLocale) {
       const response = NextResponse.next()
-      response.cookies.set(COOKIE_NAME, urlLocale, { path: '/' })
+      response.cookies.set(COOKIE_NAME, urlLocale, {
+        path: '/',
+        sameSite: 'lax',
+        secure: process.env.NODE_ENV === 'production',
+        maxAge: 31536000, // 1 year
+      })
       return response
     }
 
@@ -56,7 +61,12 @@ export function proxy(request) {
   const response = NextResponse.redirect(request.nextUrl)
 
   // 4. Set the cookie on the response so the browser saves the preferred locale.
-  response.cookies.set(COOKIE_NAME, locale, { path: '/', maxAge: 31536000 }) // Set maxAge for 1 year persistence
+  response.cookies.set(COOKIE_NAME, locale, {
+    path: '/',
+    sameSite: 'lax',
+    secure: process.env.NODE_ENV === 'production',
+    maxAge: 31536000, // 1 year
+  })
 
   return response
 }
