@@ -1,7 +1,6 @@
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Image from 'next/image'
 import Blog from '@/components/Blog'
-import InfoAlert from '@/components/InfoAlert'
 import {
   PaintBrushIcon,
   ComputerDesktopIcon,
@@ -248,21 +247,19 @@ export default async function Websites({ params }) {
   })
   return (
     <SimpleLayout title={wDict.web_portfolio} marginClass="mt-6 sm:mt-10">
-      <div className="pb-6">
-        <InfoAlert
-          text={wDict.alert_email_text}
-          action={wDict.alert_email_action}
-          link="mailto:fbustamantedelriob@gmail.com?subject=Website%20Portfolio%20Inquiry"
-        />
-      </div>
       <WebsitesInfo lang={lang} />
-      <InfoAlert
-        text={wDict.alert_linkedin_text}
-        action={wDict.alert_linkedin_action}
-        link="https://www.linkedin.com/in/fernandobustamantedelrio-bourman/"
-      />
-
       <Blog posts={posts} />
+      <div className="mt-16 border-t border-zinc-100 pt-10 dark:border-zinc-700/40">
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          {wDict.cta_contact}{' '}
+          <a
+            href="mailto:fbustamantedelriob@gmail.com?subject=Website%20Portfolio%20Inquiry"
+            className="font-medium text-zinc-800 underline underline-offset-2 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-400"
+          >
+            fbustamantedelriob@gmail.com
+          </a>
+        </p>
+      </div>
     </SimpleLayout>
   )
 }

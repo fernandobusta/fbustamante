@@ -7,7 +7,7 @@
     "nav_projects": "Dự án",
     "nav_work": "Công việc",
     "nav_websites": "Trang Web",
-    "nav_websites_mobile": "Cần Trang Web?",
+    "nav_websites_mobile": "Trang Web",
     "change_lang": "Đổi Ngôn Ngữ"
   },
   "footer": {
@@ -73,10 +73,7 @@
     "item_security_strong": "Bảo Mật Đáng Tin Cậy.",
     "item_security_desc": "Kiến trúc các nền tảng bảo mật cho tất cả dữ liệu vận hành nhạy cảm của bạn.",
     "outro": "Đừng thích nghi với phần mềm có sẵn. **Hãy cùng xây dựng công nghệ thích ứng hoàn hảo với doanh nghiệp của bạn.**",
-    "alert_email_text": "Gửi email cho tôi tại fbustamantedelriob@gmail.com",
-    "alert_email_action": "Nhấp để Gửi Email!",
-    "alert_linkedin_text": "Gửi email hoặc tin nhắn Linked-in cho tôi nếu bạn muốn hỏi về việc xây dựng trang web của mình!",
-    "alert_linkedin_action": "Hồ Sơ",
+    "cta_contact": "Bạn muốn cộng tác? Liên hệ với tôi tại",
     "website_portfolio": [
       {
         "id": 1,

@@ -7,7 +7,7 @@
     "nav_projects": "Projets",
     "nav_work": "Travail",
     "nav_websites": "Websites",
-    "nav_websites_mobile": "Besoin d'un Site Web ?",
+    "nav_websites_mobile": "Websites",
     "change_lang": "Changer de Langue"
   },
   "footer": {
@@ -73,10 +73,7 @@
     "item_security_strong": "Sécurité Fiable.",
     "item_security_desc": "Conception d'architectures sécurisées pour toutes vos données opérationnelles sensibles.",
     "outro": "Arrêtez de vous adapter à des logiciels prêts à l'emploi. **Construisons une technologie qui s'adapte parfaitement à votre entreprise.**",
-    "alert_email_text": "Envoyez-moi un e-mail à fbustamantedelriob@gmail.com",
-    "alert_email_action": "Cliquez pour Envoyer un Email !",
-    "alert_linkedin_text": "Envoyez-moi un e-mail ou un message Linked-in si vous souhaitez vous renseigner sur la création de votre site web !",
-    "alert_linkedin_action": "Profil",
+    "cta_contact": "Intéressé par une collaboration ? Contactez-moi à",
     "website_portfolio": [
       {
         "id": 1,
