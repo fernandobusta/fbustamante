@@ -8,7 +8,7 @@ import { getDictionary } from '../dictionaries'
 export const metadata = {
   title: 'Projects',
   description:
-    'A look at some of my favorite projects—the things I´ve built during my degree and in my own time.',
+    "A look at some of my favorite projects—the things I've built during my degree and in my own time.",
 }
 
 function Project({ project }) {

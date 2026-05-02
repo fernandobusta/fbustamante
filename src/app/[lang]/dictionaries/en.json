@@ -7,7 +7,7 @@
     "nav_projects": "Projects",
     "nav_work": "Work",
     "nav_websites": "Websites",
-    "nav_websites_mobile": "Need a Website?",
+    "nav_websites_mobile": "Websites",
     "change_lang": "Change Language"
   },
   "footer": {
@@ -73,10 +73,7 @@
     "item_security_strong": "Reliable Security.",
     "item_security_desc": "Architecting secure foundations for all your sensitive operational data.",
     "outro": "Stop adapting to off-the-shelf software. **Let's build technology that adapts perfectly to your business.**",
-    "alert_email_text": "Send me an email at fbustamantedelriob@gmail.com",
-    "alert_email_action": "Click to Email!",
-    "alert_linkedin_text": "Send me an email or Linked-in message if you want to inquire about building your website!",
-    "alert_linkedin_action": "Profile",
+    "cta_contact": "Interested in working together? Get in touch at",
 
     "website_portfolio": [
       {
@@ -153,7 +150,7 @@
 
     "se_intern_b1": "Developed and maintained full stack web applications using Django, leveraging tools like Plotly, Dash, SQL, and Streamlit to create dynamic and interactive interfaces.",
     "se_intern_b2": "Automated key processes with UI Vision and Python, streamlining workflows and increasing operational efficiency.",
-    "se_intern_b3": "Performed KPI analysis on cell tower data for multinational telec",
+    "se_intern_b3": "Performed KPI analysis on cell tower data for multinational telecommunications companies.",
 
     "officer_text": "Led sponsorship initiatives and managed over 100 members. Developed a new club website using Next.js driving over 60-member increase. Coordinated events and contributed to a 3-year growth plan.",
     "tutor_text": "Maths, Languages, Programming, and Design",

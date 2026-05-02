@@ -34,7 +34,12 @@ export async function Footer({ lang }) {
                 {/* Localized Copyright */}
                 &copy; {new Date().getFullYear()} {fDict.copyright_prefix}
                 <br />
-                fbustamantedelriob@gmail.com
+                <a
+                  href="mailto:fbustamantedelriob@gmail.com"
+                  className="transition hover:text-zinc-600 dark:hover:text-zinc-300"
+                >
+                  fbustamantedelriob@gmail.com
+                </a>
               </p>
             </div>
           </ContainerInner>

@@ -1,28 +1,36 @@
-import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { Subheading } from '@/components/heading'
-import Link from 'next/link'
 import { getDictionary } from '../dictionaries'
 
-function ToolsSection({ children, ...props }) {
+function RoleEntry({ title, dates, children }) {
   return (
-    <Section {...props}>
-      <ul role="list" className="space-y-16">
-        {children}
-      </ul>
-    </Section>
+    <div>
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <h3 className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+          {title}
+        </h3>
+        <span className="shrink-0 text-xs text-zinc-400 dark:text-zinc-500">
+          {dates}
+        </span>
+      </div>
+      <div className="mt-3">{children}</div>
+    </div>
   )
 }
 
-function Tool({ title, href, children }) {
+function BulletList({ items }) {
   return (
-    <Card as="li">
-      <Card.Title as="h3" href={href}>
-        {title}
-      </Card.Title>
-      <Card.List>{children}</Card.List>
-    </Card>
+    <ul className="space-y-2">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-2.5 text-sm text-zinc-600 dark:text-zinc-400">
+          <span
+            className="mt-2 h-1 w-1 shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-600"
+            aria-hidden="true"
+          />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   )
 }
 
@@ -39,76 +47,73 @@ export default async function Work({ params }) {
   return (
     <SimpleLayout title={wDict.title} intro={wDict.intro}>
       <div className="space-y-20">
-        {/* Cellusys - Integration Engineer */}
-        <ToolsSection title={wDict.cellusys} subtitle={wDict.cellusys_subtitle}>
-          <Tool title={wDict.integration_engineer}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_ie}
-            </Subheading>
-            <li>{wDict.ie_b1}</li>
-            <li>{wDict.ie_b2}</li>
-          </Tool>
-        </ToolsSection>
-        {/* Cellusys - Software Engineer */}
-        <ToolsSection title={wDict.cellusys} subtitle={wDict.cellusys_subtitle}>
-          <Tool title={wDict.se_cellusys}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_se}
-            </Subheading>
-            <li>{wDict.se_b1}</li>
-            <li>{wDict.se_b2}</li>
-            <li>{wDict.se_b3}</li>
-            <li>{wDict.se_b4}</li>
-          </Tool>
-        </ToolsSection>
-        {/* Future Connections - Software Engineer Intern */}
-        <ToolsSection
+        <Section title={wDict.cellusys} subtitle={wDict.cellusys_subtitle}>
+          <div className="space-y-8">
+            <RoleEntry title={wDict.integration_engineer} dates={wDict.date_ie}>
+              <BulletList items={[wDict.ie_b1, wDict.ie_b2]} />
+            </RoleEntry>
+            <RoleEntry title={wDict.se_cellusys} dates={wDict.date_se}>
+              <BulletList
+                items={[wDict.se_b1, wDict.se_b2, wDict.se_b3, wDict.se_b4]}
+              />
+            </RoleEntry>
+          </div>
+        </Section>
+
+        <Section
           title={wDict.future_connections}
           subtitle={wDict.future_connections_subtitle}
         >
-          <Tool title={wDict.se_intern}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_se_intern}
-            </Subheading>
-            <li>{wDict.se_intern_b1}</li>
-            <li>{wDict.se_intern_b2}</li>
-            <li>{wDict.se_intern_b3}</li>
-          </Tool>
-        </ToolsSection>
-        {/* Athletic Boxing Club - Sponsorship & Events Officer */}
-        <ToolsSection title={wDict.dcu_abc} subtitle={wDict.dcu_abc_subtitle}>
-          <Tool title={wDict.sponsorship_officer}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_officer}
-            </Subheading>
-            {/* The Link stays outside the dictionary */}
-            {wDict.officer_text}
-            <Link href="https://www.dcuboxing.com">dcuboxing.com</Link>
-          </Tool>
-        </ToolsSection>
-        {/* Other Jobs */}
-        <ToolsSection title={wDict.other_jobs}>
-          <Tool title={wDict.private_tutor}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_tutor}
-            </Subheading>
-            {wDict.tutor_text}
-          </Tool>
+          <div className="space-y-8">
+            <RoleEntry title={wDict.se_intern} dates={wDict.date_se_intern}>
+              <BulletList
+                items={[
+                  wDict.se_intern_b1,
+                  wDict.se_intern_b2,
+                  wDict.se_intern_b3,
+                ]}
+              />
+            </RoleEntry>
+          </div>
+        </Section>
 
-          <Tool title={wDict.waiter}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_waiter}
-            </Subheading>
-            {wDict.waiter_text}
-          </Tool>
+        <Section title={wDict.dcu_abc} subtitle={wDict.dcu_abc_subtitle}>
+          <div className="space-y-8">
+            <RoleEntry title={wDict.sponsorship_officer} dates={wDict.date_officer}>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                {wDict.officer_text}{' '}
+                <a
+                  href="https://www.dcuboxing.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-zinc-800 underline underline-offset-2 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-400"
+                >
+                  dcuboxing.com
+                </a>
+              </p>
+            </RoleEntry>
+          </div>
+        </Section>
 
-          <Tool title={wDict.volunteer}>
-            <Subheading className="text-zinc-600 dark:text-zinc-400">
-              {wDict.date_volunteer}
-            </Subheading>
-            {wDict.volunteer_text}
-          </Tool>
-        </ToolsSection>
+        <Section title={wDict.other_jobs}>
+          <div className="space-y-8">
+            <RoleEntry title={wDict.private_tutor} dates={wDict.date_tutor}>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                {wDict.tutor_text}
+              </p>
+            </RoleEntry>
+            <RoleEntry title={wDict.waiter} dates={wDict.date_waiter}>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                {wDict.waiter_text}
+              </p>
+            </RoleEntry>
+            <RoleEntry title={wDict.volunteer} dates={wDict.date_volunteer}>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                {wDict.volunteer_text}
+              </p>
+            </RoleEntry>
+          </div>
+        </Section>
       </div>
     </SimpleLayout>
   )
